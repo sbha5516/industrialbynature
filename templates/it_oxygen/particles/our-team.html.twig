@@ -1,0 +1,191 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set attr_extra = '' %}
+{% if particle.extra %}
+    {% for attributes in particle.extra %}
+        {% for key, value in attributes %}
+            {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% set particleheading %}
+    <div class="g-particle-intro">
+        {% if particle.mainheading %}
+            <h3 class="g-title g-main-title">{{ particle.mainheading|raw }}</h3>
+            <div class="g-title-separator {% if particle.introtext == false %}no-intro-text{% endif %}"></div>
+        {% endif %} 
+        {% if particle.introtext %}<p class="g-introtext">{{ particle.introtext|raw }}</p>{% endif %}
+    </div>
+{% endset %}
+
+{% set ourteamitems %}
+    {% for item in particle.items %}
+        {% set attr_extra_item = '' %}
+        {% for extra in item.extra %}
+            {% set attr_extra_item = attr_extra_item ~ ' ' ~ extra|keys|first|e ~ '="' ~ extra|values|first|e('html_attr') ~ '"' %}
+        {% endfor %}
+
+        {% set style1 %}
+            <div class="g-our-team-item{% if item.facebook or item.twitter or item.googleplus or item.linkedin or item.dribbble or item.email %} uk-overlay uk-overlay-hover{% endif %}">
+                {% if item.image %}
+                    <div class="g-our-team-image">
+                        <img alt="{{ item.alt|e }}" src="{{ url(item.image) }}" {{ item.image|imagesize|raw }}>
+                        {% if item.facebook or item.twitter or item.googleplus or item.linkedin or item.dribbble or item.email %}
+                            <div class="g-our-team-social uk-overlay-panel uk-overlay-background  uk-overlay-bottom uk-overlay-slide-bottom">
+                                <div class="g-grid">
+                                    {% if item.facebook %}
+                                        <div class="g-block">
+                                            <a target="{{ item.socialtarget|default('_blank')|e }}" href="{{ item.facebook|e }}"><i class="fa fa-facebook"></i></a>
+                                        </div>
+                                    {% endif %}
+                                    {% if item.twitter %}
+                                        <div class="g-block">
+                                            <a target="{{ item.socialtarget|default('_blank')|e }}" href="{{ item.twitter|e }}"><i class="fa fa-twitter"></i></a>
+                                        </div>
+                                    {% endif %}
+                                    {% if item.googleplus %}
+                                        <div class="g-block">
+                                            <a target="{{ item.socialtarget|default('_blank')|e }}" href="{{ item.googleplus|e }}"><i class="fa fa-google-plus"></i></a>
+                                        </div>
+                                    {% endif %}
+                                    {% if item.linkedin %}
+                                        <div class="g-block">
+                                            <a target="{{ item.socialtarget|default('_blank')|e }}" href="{{ item.linkedin|e }}"><i class="fa fa-linkedin"></i></a>
+                                        </div>
+                                    {% endif %}
+                                    {% if item.dribbble %}
+                                        <div class="g-block">
+                                            <a target="{{ item.socialtarget|default('_blank')|e }}" href="{{ item.dribbble|e }}"><i class="fa fa-dribbble"></i></a>
+                                        </div>
+                                    {% endif %}
+                                    {% if item.email %}
+                                        <div class="g-block">
+                                            <a target="{{ item.socialtarget|default('_blank')|e }}" href="mailto:{{ item.email|e }}"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endif %}
+                {% if item.name or item.description %}
+                    <div class="g-info-container">
+                        {% if item.membername %}<h4 class="g-our-team-name">{% if item.link %}<a target="{{ item.nametarget|default('_parent')|e }}" href="{{ item.link|e }}">{% endif %}{{ item.membername|e }}{% if item.link %}</a>{% endif %}</h4>{% endif %}
+                        {% if item.position %}<p class="g-our-team-position{% if item.position and item.description %} g-desc-enabled{% endif %}">{{ item.position|e }}</p>{% endif %}
+                        {% if item.description %}<p class="g-our-team-desc">{{ item.description|e }}</p>{% endif %}
+                    </div>
+                {% endif %}                         
+            </div>
+        {% endset %}
+
+        {% set style2 %}
+            <div class="g-our-team-item">
+                {% if item.image %}
+                    <div class="g-our-team-image">
+                        <img alt="{{ item.alt|e }}" src="{{ url(item.image) }}" {{ item.image|imagesize|raw }}>
+                    </div>
+                {% endif %}
+                {% if item.name or item.description %}
+                    <div class="g-info-container">
+                        {% if item.membername %}<h4 class="g-our-team-name">{% if item.link %}<a target="{{ item.nametarget|default('_parent')|e }}" href="{{ item.link|e }}">{% endif %}{{ item.membername|e }}{% if item.link %}</a>{% endif %}</h4>{% endif %}
+                        {% if item.position %}<p class="g-our-team-position{% if item.position and item.description %} g-desc-enabled{% endif %}">{{ item.position|e }}</p>{% endif %}
+                        {% if item.description %}<p class="g-our-team-desc">{{ item.description|e }}</p>{% endif %}
+                        {% if item.facebook or item.twitter or item.googleplus or item.linkedin or item.dribbble or item.email %}
+                            <div class="g-our-team-social">
+                                {% if item.facebook %}
+                                    <a target="{{ item.socialtarget|default('_blank')|e }}" href="{{ item.facebook|e }}"><i class="fa fa-facebook"></i></a>
+                                {% endif %}
+                                {% if item.twitter %}
+                                    <a target="{{ item.socialtarget|default('_blank')|e }}" href="{{ item.twitter|e }}"><i class="fa fa-twitter"></i></a>
+                                {% endif %}
+                                {% if item.googleplus %}
+                                    <a target="{{ item.socialtarget|default('_blank')|e }}" href="{{ item.googleplus|e }}"><i class="fa fa-google-plus"></i></a>
+                                {% endif %}
+                                {% if item.linkedin %}
+                                    <a target="{{ item.socialtarget|default('_blank')|e }}" href="{{ item.linkedin|e }}"><i class="fa fa-linkedin"></i></a>
+                                {% endif %}
+                                {% if item.dribbble %}
+                                    <a target="{{ item.socialtarget|default('_blank')|e }}" href="{{ item.dribbble|e }}"><i class="fa fa-dribbble"></i></a>
+                                {% endif %}
+                                {% if item.email %}
+                                    <a target="{{ item.socialtarget|default('_blank')|e }}" href="mailto:{{ item.email|e }}"><i class="fa fa-envelope"></i></a>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endif %}                     
+            </div>
+        {% endset %}
+
+        {% if particle.behaviour|default('static') == 'static' %}
+            <div class="g-block{% if item.class %} {{ item.class|e }}{% endif %}" {% if item.extra %}{{ attr_extra_item|raw }}{% endif %}>
+                <div class="g-content">
+                    {% if particle.style|default("style1") == "style1" %}{{ style1 }}{% endif %}
+                    {% if particle.style|default("style1") == "style2" %}{{ style2 }}{% endif %}
+                </div>
+            </div>
+        {% endif %}
+
+        {% if particle.behaviour|default('static') == 'slider' or particle.behaviour|default('static') == 'slideset' %}
+            <li {% if item.class %}class="{{ item.class|e }}"{% endif %} {% if item.extra %}{{ attr_extra_item|raw }}{% endif %}>
+                {% if particle.style|default("style1") == "style1" %}{{ style1 }}{% endif %}
+                {% if particle.style|default("style1") == "style2" %}{{ style2 }}{% endif %}
+            </li>
+        {% endif %}
+
+    {% endfor %}
+{% endset %}
+
+{% block particle %}
+	
+	{% if particle.behaviour|default('static') == 'static' %}
+		<div class="g-our-team {{ particle.style|default("style1")|e }}{% if particle.css.class %} {{ particle.css.class|e }}{% endif %}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %}>
+            {% if particle.mainheading or particle.introtext %}
+                {{ particleheading }}
+            {% endif %}
+			<div class="g-grid">
+                {{ ourteamitems }}
+			</div>
+		</div>
+	{% endif %}
+	{% if particle.behaviour|default('static') == 'slider' %}
+		<div class="g-our-team-slider {{ particle.style|default("style1")|e }}{% if particle.css.class %} {{ particle.css.class|e }}{% endif %}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %}>
+            {% if particle.mainheading or particle.introtext %}
+                {{ particleheading }}
+            {% endif %}	    	
+			<div class="uk-slidenav-position" data-uk-slider{% if particle.autoplay|default("disable") == "enable" %}="{autoplay:true}"{% endif %}>
+				<div class="uk-slider-container">
+					<ul class="uk-slider uk-grid uk-grid-width-medium-1-{{ particle.columns|default('3')|e }}">
+                        {{ ourteamitems }}
+					</ul>
+				</div>
+				{% if (particle.navigation|default('arrows') == 'arrows') or (particle.navigation|default('arrows') == 'both') %}<a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slider-item="previous"></a>{% endif %}
+				{% if (particle.navigation|default('arrows') == 'arrows') or (particle.navigation|default('arrows') == 'both') %}<a href="" class="uk-slidenav uk-slidenav-next" data-uk-slider-item="next"></a>{% endif %}
+			</div>		    	
+		</div>
+	{% endif %}
+	{% if particle.behaviour|default('static') == 'slideset' %}
+		<div class="g-our-team-slideset {{ particle.style|default("style1")|e }}{% if particle.css.class %} {{ particle.css.class|e }}{% endif %}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %}>
+            {% if particle.mainheading or particle.introtext %}
+                {{ particleheading }}
+            {% endif %}		    	
+			<div class="uk-slidenav-position" data-uk-slideset="{small: 1, medium: {{ particle.columns|default('3')|e }}, large: {{ particle.columns|default('3')|e }}, duration: {{ particle.duration|default(200)|e}}, {% if particle.autoplay|default("disable") == "enable" %}autoplay: 'true',{% endif %} animation: '{{ particle.animation|default('fade')|e}}'}">
+				<div class="uk-slider-container">
+					<ul class="uk-slideset uk-grid">
+                        {{ ourteamitems }}
+					</ul>
+				</div>
+				{% if (particle.navigation|default('arrows') == 'arrows') or (particle.navigation|default('arrows') == 'both') %}<a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>{% endif %}
+				{% if (particle.navigation|default('arrows') == 'arrows') or (particle.navigation|default('arrows') == 'both') %}<a href="" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>{% endif %}
+				{% if (particle.navigation|default('arrows') == 'dots') or (particle.navigation|default('arrows') == 'both') %}<ul class="uk-slideset-nav uk-dotnav uk-flex-center">
+	    			{% set counter = 0 %}
+	    			{% for item in particle.items %}
+	    				<li data-uk-slideset-item="{{ counter }}"><a href=""></a></li>
+	    				{% set counter = counter + 1 %}
+	    			{% endfor %}
+				</ul>{% endif %}
+			</div>		    	
+		</div>
+	{% endif %}
+{% endblock %}

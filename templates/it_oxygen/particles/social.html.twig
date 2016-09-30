@@ -1,0 +1,26 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set attr_extra = '' %}
+{% if particle.extra %}
+    {% for attributes in particle.extra %}
+        {% for key, value in attributes %}
+            {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% block particle %}
+	{% if particle.title %}<h2 class="g-title">{{ particle.title|raw }}</h2>{% endif %}
+    <div class="g-social{% if particle.css.class %} {{ particle.css.class|e }}{% endif %}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %}>
+        {% for item in particle.items %}
+            {% set attr_extra_item = '' %}
+            {% for extra in item.extra %}
+                {% set attr_extra_item = attr_extra_item ~ ' ' ~ extra|keys|first|e ~ '="' ~ extra|values|first|e('html_attr') ~ '"' %}
+            {% endfor %}
+            <a target="{{ particle.target|default('_blank')|e }}" href="{{ item.link|e }}" {% if item.tooltip %}data-uk-tooltip{% if particle.tooltippos|default('auto') == 'bottom' %}="{pos:'bottom'}"{% endif %}{% if particle.tooltippos|default('auto') == 'top' %}="{pos:'top'}"{% endif %} title="{{ item.tooltip|e }}"{% endif %} {% if item.tooltip == false %}title="{{ item.text|e }}"{% endif %} {% if item.class %}class="{{ item.class|e }}"{% endif %} {% if item.extra %}{{ attr_extra_item|raw }}{% endif %}>
+                <span class="{{ item.icon|e }}"></span>
+                {% if item.text %}<span class="g-social-text">{{ item.text|e }}</span>{% endif %}
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}

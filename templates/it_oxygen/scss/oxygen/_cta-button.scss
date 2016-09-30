@@ -1,0 +1,153 @@
+.g-cta-button {
+	&.style1 {
+		.g-cta-inner {
+			padding: 30px;
+			border: 1px solid $base-border-color;
+			border-left: 2px solid $accent-color-1;
+			background: #ffffff;
+			@include breakpoint(desktop-range) {
+				padding: 20px;
+			}
+			.g-cta-left {
+				float: left;
+				@include breakpoint(mobile-only) {
+					float: none;
+					display: block;
+				}
+				@include breakpoint(tablet-range) {
+					float: none;
+					display: block;			
+				}
+				&.no-desc {
+					.g-cta-title {
+						margin: 12px 0 0;
+						@include breakpoint(mobile-only) {
+							margin-bottom: 25px;
+						}
+						@include breakpoint(tablet-range) {
+							margin-bottom: 25px;
+						}
+					}
+				}
+			}
+			.g-cta-right {
+				float: right;
+				margin-top: 4px;
+				@include breakpoint(mobile-only) {
+					float: none;
+					display: block;
+					margin-top: 25px;
+				}
+				@include breakpoint(tablet-range) {
+					float: none;
+					display: block;
+					margin-top: 25px;			
+				}
+				&.no-desc {
+					margin-top: 0;
+				}
+				.button {
+					font-size: 1rem;
+					padding: 1rem 1.5rem;
+					@include breakpoint(mobile-only) {
+						display: block;
+						text-align: center;
+					}
+					@include breakpoint(tablet-range) {
+						display: block;
+						text-align: center;
+					}
+					@include breakpoint(desktop-range) {
+						padding: 1rem;
+					}
+					i {
+						margin-right: 10px;
+					}
+				}
+			}
+			.g-cta-title {
+				margin: 0 0 10px;
+			}
+		}
+	}
+	&.style2 {
+		.g-cta-inner {
+			@include breakpoint(mobile-only) {
+				margin-bottom: 1.5rem;
+			}
+			@include breakpoint(tablet-range) {
+				margin-bottom: 1.5rem;
+			}
+			.g-cta-left {
+				float: left;
+				@include breakpoint(mobile-only) {
+					float: none;
+					display: block;
+					text-align: center;
+				}
+				@include breakpoint(tablet-range) {
+					float: none;
+					display: block;
+					text-align: center;		
+				}
+				&.no-desc {
+					.g-cta-title {
+						margin: 12px 0 0;
+						@include breakpoint(mobile-only) {
+							margin-bottom: 25px;
+						}
+						@include breakpoint(tablet-range) {
+							margin-bottom: 25px;
+						}
+					}
+				}
+			}
+			.g-cta-right {
+				float: right;
+				margin-top: 4px;
+				@include breakpoint(mobile-only) {
+					float: none;
+					display: block;
+					margin-top: 25px;
+				}
+				@include breakpoint(tablet-range) {
+					float: none;
+					display: block;
+					margin-top: 25px;			
+				}
+				&.no-desc {
+					margin-top: 0;
+				}
+				.button {
+					font-size: 1rem;
+					padding: 1rem 1.5rem;
+					background-color: transparent;
+					color: $accent-color-1;
+					border: 2px solid $accent-color-1;
+					@include transition(all 0.2s);
+					&:hover {
+						background-color: $accent-color-1;
+						color: #ffffff;
+					}
+					@include breakpoint(mobile-only) {
+						display: block;
+						text-align: center;
+					}
+					@include breakpoint(tablet-range) {
+						display: block;
+						text-align: center;
+					}
+					@include breakpoint(desktop-range) {
+						padding: 1rem;
+					}
+					i {
+						margin-right: 10px;
+					}
+				}
+			}
+			.g-cta-title {
+				margin: 0 0 10px;
+			}
+		}
+	}
+}

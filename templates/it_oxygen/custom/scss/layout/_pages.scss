@@ -1,0 +1,72 @@
+// hacks throughout @TODO
+#g-header .g-main-nav {
+  margin-left: 10px;
+}
+
+.page-bike {
+  #g-fullwidth {
+    .g-block.size-50:first-child {
+      p,
+      .button {
+        margin-left: -2px;
+      }
+    }
+  }
+
+  #g-feature .g-grid > .standardbollards--left > .g-content {
+    padding-left: 2px;
+  }
+
+  .standardbollards {
+    .button {
+      margin-left: 2px;
+    }
+  }
+
+  .moredetails {
+    padding: 40px 14px;
+  }
+}
+
+.page-urban {
+  .g-content {
+    padding-left: 0;
+  }
+
+  .breadcrumb li:before {
+    margin-left: -5px;
+  }
+
+  .varieties,
+  .g-title,
+  .button {
+    margin-left: -2px;
+  }
+}
+
+
+@media only screen and (min-width: 767px) {
+  .aboutus-page {
+    .about_banner {
+      margin-left: -12px;
+    }
+
+    #g-fullwidth {
+      background-color: inherit;
+    }
+  }
+}
+
+
+.contacus-page {
+  #g-container-main {
+    .g-content {
+      padding-left: 0;
+    }
+  }
+}
+
+// ERROR message : No display
+.alert.alert-error {
+  display: none;
+}

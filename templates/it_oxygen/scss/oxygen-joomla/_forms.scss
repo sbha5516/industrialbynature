@@ -1,0 +1,73 @@
+legend {
+	color: #333333;
+}
+
+legend small {
+	color: #999999;
+}
+
+.input-prepend .chzn-container-single .chzn-single,
+.input-append .chzn-container-single .chzn-single {
+	border-color: $base-border-color;
+}
+
+.input-prepend .chzn-container-single .chzn-drop,
+.input-append .chzn-container-single .chzn-drop {
+	border-color: $base-border-color;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	background-color: $white;
+	border: 1px solid darken($base-border-color, 3%);
+	box-shadow: none;
+	padding: 10px;
+	border-radius: 0;
+	@include transition(border 0.2s linear, box-shadow 0.2s linear);
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+#g-aside, #g-sidebar, #g-offcanvas {
+	input, textarea, .uneditable-input {
+		width: 100%;
+	}
+	input[type="file"], input[type="image"], input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] {
+		width: auto;
+	}
+}
+
+#g-header, #g-navigation {
+	.search {
+		form {
+			margin-bottom: 0;
+		}
+		input {
+			margin-bottom: 0;
+			border: 0;
+		}
+	}
+}
+
+// Mailto and Print Windows
+.view-mailto, .body-only {
+    #g-page-surround {
+        box-shadow: none;
+    }
+}
+

@@ -1,0 +1,21 @@
+#g-mainbottom {
+	padding: $section-padding 0;
+	background-color: $mainbottom-background-color;
+	@if $mainbottom-background-image {
+    	background-image: url($mainbottom-background-image);
+    	background-repeat: unquote($mainbottom-background-repeat);
+    	background-size: unquote($mainbottom-background-size);
+    	background-attachment: unquote($mainbottom-background-attachment);
+	}
+	color: $mainbottom-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $mainbottom-heading-color;
+	}
+}
+
+@media print {
+	#g-mainbottom {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

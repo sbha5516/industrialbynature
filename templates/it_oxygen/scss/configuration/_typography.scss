@@ -1,0 +1,26 @@
+// Font Family
+$fonts-body-font:				"Varela Round", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !default;
+$fonts-heading-font:			"Varela Round", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !default;
+$fonts-menu-font:				"Varela Round", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !default;
+$font-family-mono: 				"Menlo", "Monaco", monospace;
+$font-family-serif:				"Georgia", "Times", "Times New Roman", serif;
+
+// Font Weights
+$font-weight-regular:			400;
+$font-weight-medium:			500;
+$font-weight-bold:				700;
+
+// Base Sizes
+$fontsizes-body-font-size:		0.9rem !default;
+$core-line-height:				1.5 !default;
+
+// Heading Sizes
+$h1-font-size:					$fontsizes-body-font-size*2.3 !default;
+$h2-font-size:					$fontsizes-body-font-size*1.9 !default;
+$h3-font-size:					$fontsizes-body-font-size*1.5 !default;
+$h4-font-size:					$fontsizes-body-font-size*1.15 !default;
+$h5-font-size:					$fontsizes-body-font-size !default;
+$h6-font-size:					$fontsizes-body-font-size*0.9 !default;
+
+// Menu Sizes
+$fontsizes-menu-font-size:		0.9rem !default;

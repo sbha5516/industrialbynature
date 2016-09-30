@@ -1,0 +1,181 @@
+// Set the variable defaults in case they are missing in the template
+$base-title-color: #4d4d4d !default;
+
+.g-content-pro {
+	&:not(.gutter-disabled) {
+		margin-left: -($content-padding);
+		margin-right: -($content-padding);
+	}
+	> .g-grid {
+		> .g-block {
+			@include breakpoint(mobile-only) {
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.g-content-pro, .g-content-pro-slider, .g-content-pro-slideset {
+	text-align: center;
+	&.g-pullup {
+		margin-top: -($content-margin + $content-padding + $section-padding + rem(75px));
+		position: relative;
+		z-index: 21;
+		.g-content-pro-item {
+			border: none;
+		}
+	}
+	&.gutter-disabled {
+		.g-content-pro-item {
+			border: none;
+		}
+		.uk-slideset {
+			margin-left: 0;
+			&.uk-grid {
+				> * {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+	.g-content {
+		margin: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.g-content-pro-item {
+		border: 1px solid $base-border-color;
+		@include breakpoint(mobile-only) {
+			margin-bottom: ($content-margin + $content-padding)*2;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.g-content-pro-image {
+		> a {
+			display: block;
+		}
+		img {
+			@include user-select(none);
+		}
+	}
+	.g-info-container {
+		padding: 20px;
+		background: #ffffff;
+	}
+	p {
+		margin: 0;
+	}
+	.g-content-pro-title {
+		margin: 0;
+		a {
+			color: $base-title-color;
+			&:hover {
+				color: $accent-color-1;
+			}
+		}
+	}
+	.g-content-pro-desc {
+		margin-top: 0.4rem;
+	}
+	.g-info-container-style2 {
+		&.uk-overlay-panel {
+			padding: 15px;
+			p {
+				margin-top: 5px;
+			}
+			a {
+				color: #ffffff;
+				&:hover {
+					color: $accent-color-1;
+				}
+			}
+		}
+		.g-content-pro-special, .g-item-details {
+			color: lighten($base-text-color, 35%);
+		}
+	}
+	.g-content-pro-special {
+		color: lighten($base-text-color, 20%);
+		font-style: italic;
+		float: left;
+		@include breakpoint(small-mobile-range)  {
+			float: none;
+		}
+		@include breakpoint(tablet-range) {
+			float: none;
+		}
+		i {
+			margin-right: 5px;
+		}
+	}
+	.g-content-pro-link {
+		float: right;
+		font-style: italic;
+		i {
+			margin-left: 10px;
+		}
+		@include breakpoint(small-mobile-range) {
+			float: none;
+			margin-top: 5px;
+		}
+		@include breakpoint(tablet-range) {
+			float: none;
+			margin-top: 5px;
+		}
+	}
+	.no-special {
+		.g-content-pro-link {
+			float: none;
+		}
+	}
+	.no-link {
+		.g-content-pro-special {
+			float: none;
+		}
+	}
+	.g-bottom-info {
+		margin-top: 15px;
+	}
+	.g-item-details {
+		margin-top: 0.4rem;
+		font-size: 90%;
+		color: lighten($base-text-color, 20%);
+		.date {
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+	&.style3 {
+		.g-info-container-style2 {
+			@include background(linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.15) 20%, rgba(0, 0, 0, 0.8) 100%));
+			padding: 20px;
+			a {
+				color: #ffffff;
+				&:hover {
+					color: #ffffff;
+					text-decoration: underline;
+				}
+			}
+		}
+		.g-content-pro-image {
+			.uk-overlay {
+				img {
+					@include transition(all 1s);
+				}
+			}
+			&:hover {
+				.uk-overlay {
+					img {
+						@include transform(scale(1.15));
+					}
+				}
+			}
+		}
+	}
+}

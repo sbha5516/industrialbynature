@@ -1,0 +1,40 @@
+// REQUIRED DEPENDENCIES - DO NOT CHANGE
+
+// Load Third Party Libraries
+@import "vendor/bourbon/bourbon";
+
+// Load Nucleus Configuration
+@import "configuration/nucleus/base";
+
+// Load Nucleus Mixins and Functions
+@import "nucleus/functions/base";
+@import "nucleus/mixins/base";
+
+// Load Theme Variable Driven Nucleus Elements
+@import "joomla/theme/base";
+
+// Load Template Configuration
+@import "configuration/base";
+
+//-------------------------------------------
+
+// JOOMLA TEMPLATE SPECIFIC
+@import "oxygen-joomla/core";
+@import "oxygen-joomla/typography";
+@import "oxygen-joomla/forms";
+@import "oxygen-joomla/tabs";
+@import "oxygen-joomla/utilities";
+@import "oxygen-joomla/contacts";
+@import "oxygen-joomla/breadcrumb";
+@import "oxygen-joomla/blog";
+@import "oxygen-joomla/revolution";
+@import "oxygen-joomla/nssp2";
+@import "oxygen-joomla/roksprocket";
+@import "oxygen-joomla/search";
+
+//-------------------------------------------
+
+// BREAKPOINTS
+@import "joomla/theme/breakpoints/base";
+
+//-------------------------------------------

@@ -1,0 +1,113 @@
+details:
+  name: Oxygen
+  version: 1.4.0
+  icon: paper-plane
+  date: November, 2015
+  author:
+    name: InspireTheme LTD
+    email: office@inspiretheme.com
+    link: http://www.inspiretheme.com
+
+  documentation:
+    link: http://docs.gantry.org/gantry5
+
+  support:
+    link: http://www.inspiretheme.com
+
+  updates:
+
+  copyright: (C) InspireTheme LTD. All rights reserved.
+  license: GPLv2
+  description: Oxygen Theme
+  images:
+    thumbnail: admin/images/preset1.png
+    preview: admin/images/preset1.png
+
+configuration:
+  gantry:
+    platform: joomla
+    engine: nucleus
+
+  theme:
+    parent: it_oxygen
+    base: gantry-theme://common
+    file: gantry-theme://include/theme.php
+    class: \Gantry\Framework\Theme
+
+  fonts:
+    roboto:
+      400: 'gantry-theme://fonts/roboto_regular_macroman/Roboto-Regular-webfont'
+      500: 'gantry-theme://fonts/roboto_medium_macroman/Roboto-Medium-webfont'
+      700: 'gantry-theme://fonts/roboto_bold_macroman/Roboto-Bold-webfont'
+
+  css:
+    compiler: \Gantry\Component\Stylesheet\ScssCompiler
+    paths:
+      - gantry-theme://scss
+      - gantry-engine://scss
+    files:
+      - oxygen
+      - oxygen-joomla
+      - custom
+    persistent:
+      - oxygen
+    overrides:
+      - oxygen-joomla
+      - custom
+
+  block-variations:
+    Box Variations:
+      box1: Box 1
+      box2: Box 2
+      box3: Box 3
+      box4: Box 4
+    Effects:
+      shadow: Shadow 1
+      shadow2: Shadow 2
+      rounded: Rounded
+      square: Square
+    Utility:
+      disabled: Disabled
+      align-right: Align Right
+      align-left: Align Left
+      center: Center
+      full-width: Full Width
+      equal-height: Equal Height
+      nomarginall: No Margin
+      nopaddingall: No Padding
+
+admin:
+  styles:
+    core:
+      - base
+      - fonts
+      - fontsizes
+      - accent
+    section:
+      - drawer
+      - top
+      - header
+      - navigation
+      - breadcrumb
+      - fullwidth
+      - showcase
+      - intro
+      - feature
+      - subfeature
+      - utility
+      - maintop
+      - systemmessages
+      - sidebar
+      - mainbody
+      - aside
+      - mainbottom
+      - extension
+      - additional
+      - prebottom
+      - bottom
+      - afterbottom
+      - last
+      - footer
+      - copyright
+    configuration:
+      - breakpoints

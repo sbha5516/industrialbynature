@@ -1,0 +1,21 @@
+#g-showcase {
+	padding: $section-padding 0;
+	background-color: $showcase-background-color;
+	@if $showcase-background-image {
+    	background-image: url($showcase-background-image);
+    	background-repeat: unquote($showcase-background-repeat);
+    	background-size: unquote($showcase-background-size);
+    	background-attachment: unquote($showcase-background-attachment);
+	}
+	color: $showcase-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $showcase-heading-color;
+	}
+}
+
+@media print {
+	#g-showcase {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

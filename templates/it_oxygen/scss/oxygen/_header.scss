@@ -1,0 +1,35 @@
+#g-header {
+	background-color: $header-background-color;
+	@if $header-background-image {
+    	background-image: url($header-background-image);
+    	background-repeat: unquote($header-background-repeat);
+    	background-size: unquote($header-background-size);
+    	background-attachment: unquote($header-background-attachment);
+	}
+	color: $header-text-color;
+	position: relative;
+	z-index: 1002;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $header-heading-color;
+	}
+
+	> .g-container {
+		position: relative;
+	}
+
+	.g-content {
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+@media print {
+	#g-header {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

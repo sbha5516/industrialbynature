@@ -1,0 +1,21 @@
+#g-last {
+	padding: $section-padding 0;
+	background-color: $last-background-color;
+	@if $last-background-image {
+    	background-image: url($last-background-image);
+    	background-repeat: unquote($last-background-repeat);
+    	background-size: unquote($last-background-size);
+    	background-attachment: unquote($last-background-attachment);
+	}
+	color: $last-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $last-heading-color;
+	}
+}
+
+@media print {
+	#g-last {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

@@ -1,0 +1,37 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set attr_extra = '' %}
+{% if particle.extra %}
+    {% for attributes in particle.extra %}
+        {% for key, value in attributes %}
+            {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% set ctabutton %}
+    <div class="g-grid">
+        <div class="g-block">
+            <div class="g-cta-inner clearfix">
+                <div class="g-cta-left {% if particle.description == false %} no-desc{% endif %}">
+                    {% if particle.title %}<h3 class="g-cta-title">{{ particle.title|raw }}</h3>{% endif %}
+                    {% if particle.description %}<span class="g-cta-desc">{{ particle.description|raw }}</span>{% endif %}
+                </div>
+                <div class="g-cta-right{% if particle.description == false %} no-desc{% endif %}">
+                    {% if particle.link %}
+                        <a class="button" target="{{ particle.target|default('_parent')|e }}" href="{{ particle.link|e }}">{% if particle.buttonicon %}<i class="{{ particle.buttonicon|e }}"></i>{% endif %}{{ particle.buttontext|e }}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endset %}
+
+{% block particle %}
+
+    <div class="g-cta-button{% if particle.css.class %} {{ particle.css.class|e }}{% endif %} {{ particle.style|default("style1")|e }}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %}>
+        {% if particle.style|default("style1") == "style1" %}{{ ctabutton }}{% endif %}
+        {% if particle.style|default("style1") == "style2" %}{{ ctabutton }}{% endif %}
+    </div>
+
+{% endblock %}

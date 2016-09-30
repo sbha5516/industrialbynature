@@ -1,0 +1,24 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set attr_extra = '' %}
+{% if particle.extra %}
+    {% for attributes in particle.extra %}
+        {% for key, value in attributes %}
+            {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% block particle %}
+
+    <div class="g-page-title{% if particle.css.class %} {{ particle.css.class|e }}{% endif %}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %}>
+        <div class="g-grid">
+            <div class="g-block">
+                <div class="g-page-title-inner">
+                    {% if particle.title or particle.icon %}<h3>{% if particle.icon %}<i class="{{ particle.icon|e }}"></i>{% endif %}{% if particle.title %}{{ particle.title|e }}{% endif %}</h3>{% endif %}
+                    {% if particle.description %}<span>{{ particle.description|e }}</span>{% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

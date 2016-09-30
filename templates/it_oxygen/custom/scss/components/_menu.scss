@@ -1,0 +1,170 @@
+.g-block.size-45 {
+  .g-main-nav {
+    .g-toplevel:first-child {
+      > li:nth-child(1) {
+        @extend %sr-only;
+      }
+    }
+  }
+
+  .g-menu-item-title {
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: 400;
+
+    &:hover,
+    &:focus,
+    &.active {
+      color: $secondary-color;
+    }
+  }
+}
+
+.g-block.size-40 {
+  .g-main-nav {
+    .g-toplevel:first-child {
+      > li:nth-child(1),
+      > li:nth-child(2),
+      > li:nth-child(3) {
+        @extend %sr-only;
+      }
+    }
+
+    .g-toplevel {
+      text-align: left;
+
+      .g-menu-item {
+        border-left: $border;
+        margin: 0 -2px 0 0 !important;
+
+        .g-menu-item-container {
+          height: $header-height;
+          line-height: $header-height;
+          padding: 0 0 0 15px !important;
+          text-align: center;
+
+        }
+
+        .g-menu-item-title {
+          color: $primary-menu-color;
+          font-size: 20px;
+          margin-left: 30px;
+          margin-right: 20px;
+
+        }
+
+        &:hover,
+        &:focus {
+          .g-menu-item-title {
+            color: $secondary-color;
+          }
+        }
+      }
+
+      li:last-child {
+        border-right: $border;
+      }
+    }
+  }
+}
+
+.menu {
+  &--primary {
+    &__bike {
+      background: url('../../images/web/header/iconbike.png') no-repeat 15px center;
+      color: $primary-menu-color;
+      &:hover,
+      &:focus {
+        background: url('../../images/web/header/iconbikehover.png') no-repeat 15px center;
+        box-shadow: inset 0 -5px 0 0 $secondary-color;
+        color: $secondary-color;
+      }
+    }
+
+    &__urban {
+      background: url('../../images/web/header/iconurban.png') no-repeat 15px center;
+      color: $primary-menu-color;
+      &:hover,
+      &:focus {
+        background: url('../../images/web/header/iconurbanhover.png') no-repeat 15px center;
+        box-shadow: inset 0 -5px 0 0 $secondary-color;
+        color: $secondary-color;
+      }
+    }
+
+    &__play {
+      background: url('../../images/web/header/iconplay.png') no-repeat 15px center;
+      color: $primary-menu-color;
+      &:hover,
+      &:focus {
+        background: url('../../images/web/header/iconplayhover.png') no-repeat 15px center;
+        box-shadow: inset 0 -5px 0 0 $secondary-color;
+        color: $secondary-color;
+      }
+    }
+
+    .g-menu-item-title {
+      margin-left: 0;
+      padding-left: 20px;
+    }
+
+  }
+
+}
+
+#g-header .g-main-nav .g-dropdown {
+  &.g-active {
+    background-color: transparent;
+    box-shadow: none;
+    width: 205px;
+  }
+
+  &.g-dropdown-right {
+    left: -40px;
+  }
+
+  .g-sublevel {
+    li {
+      background-color: rgba(77, 77, 77, .7);
+      border-right: none;
+      margin: 0 !important;
+      padding: 0;
+      text-align: center;
+
+      a {
+        height: auto;
+        line-height: normal;
+        margin: 0;
+        padding: 15px 0 !important;
+
+        span {
+          color: $white;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: rgba(50,50,50, .3)
+        }
+      }
+    }
+  }
+}
+
+// Especial case: Only for bike page
+.page-bike #g-header .g-main-nav .g-dropdown .g-sublevel li{
+  background-color: rgba(97, 133, 50, .7);
+
+  a {
+    &:hover,
+    &:focus {
+      background-color: rgba(87, 119, 45, .3)
+    }
+  }
+}
+
+#g-mobilemenu-container {
+  .g-menu-item-title {
+    fonts-size: 20px;
+    line-height: 30px;
+  }
+}

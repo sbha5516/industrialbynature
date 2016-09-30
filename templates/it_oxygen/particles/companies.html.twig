@@ -1,0 +1,114 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set attr_extra = '' %}
+{% if particle.extra %}
+    {% for attributes in particle.extra %}
+        {% for key, value in attributes %}
+            {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% set particleheading %}
+	<div class="g-particle-intro">
+		{% if particle.mainheading %}
+			<h3 class="g-title g-main-title">{{ particle.mainheading|raw }}</h3>
+			<div class="g-title-separator {% if particle.introtext == false %}no-intro-text{% endif %}"></div>
+		{% endif %}	
+		{% if particle.introtext %}<p class="g-introtext">{{ particle.introtext|raw }}</p>{% endif %}
+	</div>
+{% endset %}
+
+{% block particle %}
+
+{% set companiesitemsstatic %}
+	{% for item in particle.items %}
+		{% set attr_extra_item = '' %}
+		{% for extra in item.extra %}
+			{% set attr_extra_item = attr_extra_item ~ ' ' ~ extra|keys|first|e ~ '="' ~ extra|values|first|e('html_attr') ~ '"' %}
+		{% endfor %}
+		<div class="g-block{% if item.class %} {{ item.class|e }}{% endif %}" {% if item.extra %}{{ attr_extra_item|raw }}{% endif %}>
+			<div class="g-content">
+				<div class="g-companies-item{% if item.companyname %} uk-overlay uk-overlay-hover{% endif %}">
+					{% if item.image %}<div class="g-companies-image">
+						{% if item.companylink %}<a target="{{ item.target|default('_blank')|e }}" href="{{ item.companylink|e }}">{% endif %}<img alt="{{ item.alt|e }}" src="{{ url(item.image) }}" {{ item.image|imagesize|raw }}>{% if item.companylink %}</a>{% endif %}
+					</div>{% endif %}
+					{% if item.companyname %}<div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+						<h4 class="g-companies-name">{% if item.companylink %}<a target="{{ item.target|default('_blank')|e }}" href="{{ item.companylink|e }}">{% endif %}{{ item.companyname|e }}{% if item.companylink %}</a>{% endif %}</h4>
+					</div>{% endif %}
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+{% endset %}
+
+{% set companiesitems %}
+	{% for item in particle.items %}
+		{% set attr_extra_item = '' %}
+		{% for extra in item.extra %}
+			{% set attr_extra_item = attr_extra_item ~ ' ' ~ extra|keys|first|e ~ '="' ~ extra|values|first|e('html_attr') ~ '"' %}
+		{% endfor %}
+		<li {% if item.class %}class="{{ item.class|e }}"{% endif %} {% if item.extra %}{{ attr_extra_item|raw }}{% endif %}>							        	
+			<div class="g-companies-item{% if item.companyname %} uk-overlay uk-overlay-hover{% endif %}">
+				{% if item.image %}<div class="g-companies-image">
+					{% if item.companylink %}<a target="{{ item.target|default('_blank')|e }}" href="{{ item.companylink|e }}">{% endif %}<img alt="{{ item.alt|e }}" src="{{ url(item.image) }}" {{ item.image|imagesize|raw }}>{% if item.companylink %}</a>{% endif %}
+				</div>{% endif %}
+				{% if item.companyname %}<div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+					<h4 class="g-companies-name">{% if item.companylink %}<a target="{{ item.target|default('_blank')|e }}" href="{{ item.companylink|e }}">{% endif %}{{ item.companyname|e }}{% if item.companylink %}</a>{% endif %}</h4>
+				</div>{% endif %}
+			</div>
+		</li>
+	{% endfor %}
+{% endset %}
+
+	{% if particle.behaviour|default('static') == 'static' %}
+		<div class="g-companies{% if particle.css.class %} {{ particle.css.class|e }}{% endif %} {{ particle.style|default("style1")|e }}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %}>
+			{% if particle.mainheading or particle.introtext %}
+				{{ particleheading }}
+			{% endif %}
+			<div class="g-grid">
+				{{ companiesitemsstatic }}
+			</div>
+		</div>
+	{% endif %}
+	{% if particle.behaviour|default('static') == 'slider' %}
+		<div class="g-companies-slider{% if particle.css.class %} {{ particle.css.class|e }}{% endif %} {{ particle.style|default("style1")|e }}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %}>
+			{% if particle.mainheading or particle.introtext %}
+				{{ particleheading }}
+			{% endif %}		    	
+			<div class="uk-slidenav-position" data-uk-slider{% if particle.autoplay|default("disable") == "enable" %}="{autoplay:true}"{% endif %}>
+				<div class="uk-slider-container">
+					<ul class="uk-slider uk-grid uk-grid-width-medium-1-{{ particle.columns|default('3')|e }}">
+						{{ companiesitems }}
+					</ul>
+				</div>
+				{% if (particle.navigation|default('arrows') == 'arrows') or (particle.navigation|default('arrows') == 'both') %}<a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slider-item="previous"></a>{% endif %}
+				{% if (particle.navigation|default('arrows') == 'arrows') or (particle.navigation|default('arrows') == 'both') %}<a href="" class="uk-slidenav uk-slidenav-next" data-uk-slider-item="next"></a>{% endif %}
+			</div>		    	
+		</div>
+	{% endif %}
+	{% if particle.behaviour|default('static') == 'slideset' %}
+		<div class="g-companies-slideset{% if particle.css.class %} {{ particle.css.class|e }}{% endif %} {{ particle.style|default("style1")|e }}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %}>
+			{% if particle.mainheading or particle.introtext %}
+				{{ particleheading }}
+			{% endif %}	    	
+			<div class="uk-slidenav-position" data-uk-slideset="{small: 1, medium: {{ particle.columns|default('3')|e }}, large: {{ particle.columns|default('3')|e }}, duration: {{ particle.duration|default(200)|e}}, {% if particle.autoplay|default("disable") == "enable" %}autoplay: 'true',{% endif %} animation: '{{ particle.animation|default('fade')|e}}'}">
+				<div class="uk-slider-container">
+					<ul class="uk-slideset uk-grid">
+						{% if particle.style|default("style1") == "style1" %}{{ companiesitems }}{% endif %}
+						{% if particle.style|default("style1") == "style2" %}{{ companiesitems }}{% endif %}
+					</ul>
+				</div>
+				{% if (particle.navigation|default('arrows') == 'arrows') or (particle.navigation|default('arrows') == 'both') %}<a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>{% endif %}
+				{% if (particle.navigation|default('arrows') == 'arrows') or (particle.navigation|default('arrows') == 'both') %}<a href="" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>{% endif %}
+				{% if (particle.navigation|default('arrows') == 'dots') or (particle.navigation|default('arrows') == 'both') %}<ul class="uk-slideset-nav uk-dotnav uk-flex-center">
+	    			{% set counter = 0 %}
+	    			{% for item in particle.items %}
+	    				<li data-uk-slideset-item="{{ counter }}"><a href=""></a></li>
+	    				{% set counter = counter + 1 %}
+	    			{% endfor %}
+				</ul>{% endif %}
+			</div>    	
+		</div>
+	{% endif %}
+{% endblock %}

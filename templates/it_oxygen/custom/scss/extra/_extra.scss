@@ -1,0 +1,852 @@
+.row-eq-height {
+  display: flex;
+}
+
+.area_block {
+  background-position: left bottom;
+  background-size: 100% 100%;
+  color: $white;
+  overflow: hidden;
+  position: relative;
+
+  &.hori1 {
+    background-size: cover;
+  }
+
+  .move_right {
+    bottom: -293px;
+    position: absolute;
+    right: -137px;
+    width: 67.3%;
+  }
+
+  .right {
+    height: 100%;
+    position: relative;
+
+    img {
+      bottom: 0;
+      height: 80%;
+      position: absolute;
+      width: 17%;
+    }
+
+  }
+
+  .move_left {
+    bottom: 0;
+    position: absolute;
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+  .move_top {
+    bottom: -172px;
+    height: 100%;
+    position: absolute;
+    right: 39%;
+    top: auto;
+    width: 15%;
+    z-index: 2;
+  }
+
+  .fix_stand {
+    bottom: -70px;
+    position: absolute;
+    right: -8px;
+    width: 43%;
+  }
+
+}
+
+.detail_txt {
+  padding: 48% 0 37%;
+  position: relative;
+
+  .middle {
+    font-family: 'PassionOne-Regular';
+    margin: 17px 0;
+
+    p {
+      font-size: 60px;
+      line-height: 56px;
+      margin: 0;
+    }
+
+  }
+
+  .top img {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .mor_btn.red_btn {
+    background: $color_outrageous_orange_approx;
+
+    &:hover,
+    &:focus {
+      background: $color_tia_maria_approx;
+    }
+  }
+}
+
+#g-fullwidth {
+
+  .detail_txt .top h3 {
+    color: $white;
+    display: inline-block;
+    font-family: 'Patua One';
+    font-size: 32px;
+    margin: 6px 0 0 10px;
+  }
+
+  .about_banner h1 {
+    color: $color_mine_shaft_approx;
+    font-family: 'roboto';
+    font-size: 56px;
+    font-weight: normal;
+    margin: 8px 0 19px;
+  }
+
+}
+
+.page-bike,
+.page-urban,
+.page-play {
+
+  #g-subfeature {
+    background-color: $color_mine_shaft_approx;
+  }
+
+  .g-content-pro {
+    .g-content-pro-item {
+      border: 0;
+    }
+
+    .g-info-container {
+      background: none;
+      color: $white;
+      font-family: 'roboto';
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .g-content > .standardbollards {
+
+    &:nth-child(2) {
+
+      .standardbollards--left {
+        margin-top: 15px;
+        width: 62%;
+      }
+
+      .standardbollards--right {
+        width: 37%;
+      }
+
+      .g-grid {
+        border-top: 1px solid $color_celeste_approx;
+        padding-top: 83px;
+        position: relative;
+
+        h3.g-main-feature-title {
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+
+      }
+
+      h3.g-main-feature-title {
+        margin-top: 30px;
+      }
+
+    }
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.page-urban {
+
+  #colorbox {
+    border-radius: 0;
+  }
+
+  #cboxLoadedContent {
+    padding: 30px;
+  }
+
+  .modelpopup .bfPageIntro p {
+    border-bottom: none;
+    border-left: 5px solid $color_atlantis_approx;
+    color: $color_mine_shaft_approx !important;
+    font-family: 'Patua One';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+  }
+}
+
+.moduletable {
+  &.right_slide {
+    float: right;
+  }
+
+  .top_slider {
+    height: 519px;
+    padding-bottom: 16px;
+    padding-top: 34px;
+  }
+}
+
+#g-feature {
+  background: none !important;
+
+  .g-grid > {
+    .g-content {
+      padding: 0;
+    }
+
+    .standardbollards--left {
+      margin-left: 0;
+      > .g-content {
+        padding-left: 0;
+      }
+    }
+
+  }
+}
+
+.standardbollards--right {
+
+  p {
+    color: $color_atlantis_approx;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  span {
+    color: $color_mine_shaft_approx;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+
+.moredetails__header {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.moredetails {
+
+  .g-content-pro-title {
+    margin: 26px auto;
+  }
+
+  .g-content-pro-image {
+    max-height: 215px;
+    max-width: 382px;
+    overflow: hidden;
+
+    .uk-overlay-fade {
+      max-height: 215px;
+      max-width: 382px;
+
+      &.uk-overlay-icon:before {
+        background: $color_atlantis_approx;
+        border-radius: 50%;
+        display: table;
+        font-weight: 100;
+        left: 46%;
+        padding: 20px;
+        top: 41%;
+      }
+
+    }
+
+  }
+
+}
+
+.varieties {
+
+  .txtabs-nav {
+
+    bottom: -1px;
+    font-family: 'roboto';
+    list-style: none;
+    margin: 0;
+    position: relative;
+
+    li {
+      display: inline-block;
+
+      a {
+        border: 1px solid transparent;
+        color: $color_mine_shaft_approx;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 9px 37px;
+        text-decoration: none;
+      }
+
+      &.active a {
+        border: 1px solid $color_celeste_approx;
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+
+  .txtabs-content {
+    border: 1px solid $color_celeste_approx;
+
+    .txtabs-pane {
+
+      &.fade {
+        display: none;
+      }
+
+      &.active.fade {
+        display: block;
+      }
+
+    }
+
+  }
+
+  .slide-desc-text-default {
+    display: none;
+  }
+
+  .djslider-default {
+
+    .navigation-container-custom {
+      bottom: -30px;
+      left: 0;
+      right: auto;
+      top: auto;
+      &:focus {
+        outline: none;
+      }
+
+      span:focus {
+        outline: none;
+      }
+    }
+
+    .load-button {
+      border: 0;
+      border-radius: 0;
+      height: 16px;
+      opacity: 1;
+      width: 16px;
+    }
+
+    .load-button-active {
+      height: 21px;
+      margin-bottom: -2px;
+      width: 21px;
+    }
+  }
+
+  .djslider-loader-default {
+    overflow: visible;
+  }
+
+  h3.g-title {
+    color: $color_atlantis_approx !important;
+    font-family: 'roboto';
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .g-title span:after {
+    display: none;
+  }
+}
+
+.modelpopup {
+  color: $color_mine_shaft_approx;
+  font-family: 'roboto';
+  font-size: 18px;
+
+  .bfClearfix {
+    label {
+      font-weight: normal;
+    }
+
+    input[type="text"] {
+      border: 1px solid $color_suva_gray_approx;
+
+      border-radius: 5px;
+      font-size: 24px;
+      height: 43px;
+      line-height: 30px;
+      padding: 0 8px 5px;
+      width: 100%;
+      &:focus {
+        border: 1px solid $color_atlantis_approx;
+      }
+    }
+
+    textarea {
+      border: 1px solid $color_suva_gray_approx;
+      border-radius: 5px;
+      font-size: 24px;
+      width: 100%;
+    }
+
+    .bfSubmitButton {
+      display: block;
+      margin: 40px auto;
+      width: 120px;
+    }
+  }
+
+  .bfSectionDescription {
+
+    h2 {
+      border: 5px solid $black;
+      padding: 16px 10px;
+      text-align: center;
+
+      strong {
+        color: $black;
+        font-family: 'roboto';
+        font-size: 26px;
+      }
+
+    }
+
+    > p {
+      margin: 27px 0;
+    }
+
+  }
+}
+
+.pweb-form-blue {
+
+  .modal-dialog form.pwebcontact-form {
+
+    input.pweb-input:focus {
+      border: 1px solid $color_atlantis_approx !important;
+      box-shadow: none !important;
+    }
+
+    select:focus {
+      border: 1px solid $color_atlantis_approx !important;
+      box-shadow: none !important;
+    }
+  }
+
+  form.pwebcontact-form textarea:focus {
+    border: 1px solid $color_atlantis_approx !important;
+    box-shadow: none !important;
+  }
+}
+
+#pwebcontact205_text-0 {
+  @extend %extend_3;
+}
+
+#pwebcontact206_text-0 {
+  @extend %extend_3;
+}
+
+#pwebcontact205_text-1 {
+  @extend %extend_4;
+}
+
+#pwebcontact206_text-1 {
+  @extend %extend_4;
+}
+
+#pwebcontact205_text-2 {
+  margin: 30px 0 40px;
+}
+
+#pwebcontact206_text-2 {
+  margin: 30px 0 40px;
+}
+
+:focus {
+  outline-style: auto;
+  outline-width: 0;
+}
+
+.uk-sticky-placeholder {
+  height: 87px;
+  margin: 0;
+}
+
+.about_banner {
+
+  .aboutus-page & {
+    @media only screen and (min-width: 767px) {
+      background: $color_gallery_approx url('../images/experiencedwelders.jpg') right center no-repeat;
+      background-size: 49% 100%;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  p {
+    color: $color_mine_shaft_approx;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .g-container > div:first-child {
+    margin-bottom: 20px;
+  }
+
+  .container > .row > div:first-child .row {
+    padding-right: 15px;
+  }
+}
+
+.fab_img {
+  position: absolute;
+  right: 0;
+
+  img {
+    display: none;
+  }
+}
+
+.g-our-team-social {
+
+  a {
+    background: $color_atlantis_approx;
+    border-radius: 50px;
+    display: inline-block;
+    height: 36px !important;
+    padding: 4px;
+    text-align: center;
+    width: 36px !important;
+
+    &:hover {
+      background-color: $color_olive_drab_approx;
+    }
+  }
+
+  .fa-envelope:before {
+    color: $white;
+    content: "\f003";
+    font-size: 21px;
+  }
+}
+
+.top_slider {
+  background: $color_gallery_approx;
+  color: $color_mine_shaft_approx;
+  font-family: 'roboto';
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 15px;
+
+  h2 {
+    color: $color_mine_shaft_approx !important;
+    font-family: 'roboto';
+    font-size: 56px;
+    font-weight: normal;
+    line-height: 60px;
+    margin-bottom: 17px;
+    text-transform: capitalize;
+  }
+
+  .readmore {
+    background: $color_atlantis_approx;
+    border-radius: 45px;
+    display: inline-block;
+    margin-right: 11px;
+    padding: 9px 30px;
+
+    a {
+      color: $white;
+      font-family: 'Patua One';
+      font-size: 16px;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .slides_container .bt-inner .readmore {
+    &:hover,
+    &:focus {
+      background-color: $color_olive_drab_approx;
+    }
+  }
+}
+
+.right_slide {
+  .slides_control .slide {
+    height: 100% !important;
+  }
+
+  .bt-cs .bt-inner img {
+    height: 519px;
+    width: 831px !important;
+  }
+}
+
+.contacus-page {
+
+  .g-particle,
+  #g-mainbody {
+    color: $color_mine_shaft_approx;
+  }
+
+  #g-mainbody {
+    color: $color_mine_shaft_approx;
+  }
+}
+
+body.itemid-101 #g-fullwidth {
+  padding-top: 87px;
+}
+
+.slide .bt-row .row {
+  margin-left: -15px;
+}
+
+p.blank {
+  height: 5px;
+}
+
+.bt-inner img {
+  opacity: 1 !important;
+}
+
+.g-particle .g-main-feature-title {
+  border-left: 5px solid $color_atlantis_approx;
+  color: $color_mine_shaft_approx !important;
+  font-family: 'Patua One';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 40px;
+  padding: 5px 10px;
+}
+
+.g-content .standardbollards--right img {
+  margin-top: 15px;
+  max-height: 510px;
+}
+
+.bike__moredetails .g-content-pro-title {
+  font-family: 'roboto';
+}
+
+.platform-content .custom {
+  p.order_btn {
+    border-bottom: 1px solid $color_celeste_approx;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .order_btn a {
+    background: $color_atlantis_approx;
+    border-radius: 50px;
+    color: $white;
+    display: inline-block;
+    font-family: 'Patua One';
+    font-size: 16px;
+    line-height: 12px;
+    padding: 15px 22px;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      background: $color_olive_drab_approx;
+      outline: none;
+    }
+  }
+}
+
+.titlename h3.g-title {
+  border-left: 5px solid $color_atlantis_approx;
+  color: $color_mine_shaft_approx !important;
+  font-family: 'Patua One';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 5px 10px;
+
+  span:after {
+    display: none;
+  }
+}
+
+.djslider-default .slider-container > ul > li:hover a {
+  &:after {
+    background: $black;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    transition: .5s;
+    width: 100%;
+  }
+
+  &:before {
+    background: url('../images/search_icon.png') no-repeat center;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.modal-dialog .pwebcontact-form {
+  color: $color_mine_shaft_approx;
+  font-family: 'roboto';
+  font-size: 18px;
+
+  .pweb-field-container {
+
+    .pweb-label {
+      width: 100%;
+
+      label {
+        font-weight: normal;
+        text-transform: capitalize;
+        .pweb-asterisk {
+          color: $color_mine_shaft_approx;
+        }
+      }
+    }
+
+    .pweb-field {
+      textarea {
+        @extend %extend_2;
+        height: 103px !important;
+      }
+
+      select {
+        height: 43px;
+      }
+
+      input.pweb-input {
+        @extend %extend_2;
+        height: 43px;
+      }
+    }
+  }
+}
+
+.pweb-labels-inline .modal-dialog form.pwebcontact-form {
+  .pweb-field {
+    width: 100%;
+  }
+
+  .pweb-field-buttons .pweb-field {
+    display: block;
+    margin: 28px 0 0;
+    text-align: center;
+
+    button.btn {
+      background: $color_atlantis_approx;
+      border: none;
+      border-radius: 50px;
+      box-shadow: none;
+      font-family: 'Patua One';
+      font-size: 16px;
+      padding: 10px 0;
+      width: 125px;
+      &:hover {
+        background: $color_olive_drab_approx;
+      }
+    }
+  }
+}
+
+.pwebcontact-box.pweb-modal {
+  &.pweb-radius div.pwebcontact-container {
+    border-radius: 0;
+  }
+
+  div.pwebcontact-container {
+    padding: 30px;
+  }
+}
+
+.ui-effects-transfer.pweb-genie.pweb-radius {
+  border-radius: 0;
+}
+
+div.pweb-modal .pweb-button-close {
+  background: url('../images/close.png') no-repeat !important;
+  padding: 36px 0 0 36px !important;
+}
+
+header#g-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+form.pwebcontact-form button.btn:focus {
+  outline-style: auto;
+  outline-width: 0;
+}
+
+.no-article #g-container-main {
+  display: none;
+}
+
+.g-block .about_banner .g-container {
+  width: 1170px;
+}
+
+.cstm_cont .g-container {
+  width: 1170px;
+}
+
+//#g-subfeature .g-particle-intro .g-main-title {
+//  margin-left: 15px;
+//}
+
+.pweb-alert.alert-block {
+  font-size: 16px !important;
+}
+
+.contact-form form > fieldset > legend {
+  color: $color_mine_shaft_approx;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h2 {
+
+}

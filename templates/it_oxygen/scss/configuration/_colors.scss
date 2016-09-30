@@ -1,0 +1,275 @@
+// Basics
+$white:										#ffffff;
+$black:										#000000;
+$off-white:									#f7f7f7;
+
+// Base
+$base-background-color:						#ffffff !default;
+$base-text-color:							#91929c !default;
+$base-border-color:							#ecf0f1 !default;
+$base-title-color:							#2d3d4d !default;
+$base-element-color:						#f8f9fa !default;
+$base-background-image:						false !default;
+$base-background-repeat:					no-repeat !default;
+$base-background-size:						auto !default;
+$base-background-attachment:				scroll !default;
+
+// Accents
+$accent-color-1:							#21c2f8 !default;
+$accent-color-2:							#8F4DAE !default;
+
+// Drawer
+$drawer-background-color:					#ffffff !default;
+$drawer-background-image:					false !default;
+$drawer-background-repeat:					no-repeat !default;
+$drawer-background-size:					auto !default;
+$drawer-background-attachment:				scroll !default;
+$drawer-text-color:							#91929c !default;
+$drawer-heading-color:						#2d3d4d !default;
+
+// Top
+$top-background-color:						#ffffff !default;
+$top-background-image:						false !default;
+$top-background-repeat:						no-repeat !default;
+$top-background-size:						auto !default;
+$top-background-attachment:					scroll !default;
+$top-text-color:							#91929c !default;
+$top-heading-color:							#2d3d4d !default;
+
+// Header
+$header-background-color:					#ffffff !default;
+$header-background-image:					false !default;
+$header-background-repeat:					no-repeat !default;
+$header-background-size:					auto !default;
+$header-background-attachment:				scroll !default;
+$header-text-color:							#91929c !default;
+$header-heading-color:						#2d3d4d !default;
+
+// Navigation
+$navigation-background-color:				#ffffff !default;
+$navigation-background-image:				false !default;
+$navigation-background-repeat:				no-repeat !default;
+$navigation-background-size:				auto !default;
+$navigation-background-attachment:			scroll !default;
+$navigation-text-color:						#91929c !default;
+$navigation-heading-color:					#2d3d4d !default;
+
+// Breadcrumb
+$breadcrumb-background-color:				#ffffff !default;
+$breadcrumb-background-image:				false !default;
+$breadcrumb-background-repeat:				no-repeat !default;
+$breadcrumb-background-size:				auto !default;
+$breadcrumb-background-attachment:			scroll !default;
+$breadcrumb-text-color:						#91929c !default;
+$breadcrumb-heading-color:					#2d3d4d !default;
+
+// Fullwidth
+$fullwidth-background-color:				#ffffff !default;
+$fullwidth-background-image:				false !default;
+$fullwidth-background-repeat:				no-repeat !default;
+$fullwidth-background-size:					auto !default;
+$fullwidth-background-attachment:			scroll !default;
+$fullwidth-text-color:						#91929c !default;
+$fullwidth-heading-color:					#2d3d4d !default;
+
+// Showcase
+$showcase-background-color:					#ffffff !default;
+$showcase-background-image:					false !default;
+$showcase-background-repeat:				no-repeat !default;
+$showcase-background-size:					auto !default;
+$showcase-background-attachment:			scroll !default;
+$showcase-text-color:						#91929c !default;
+$showcase-heading-color:					#2d3d4d !default;
+
+// Intro
+$intro-background-color:					#ffffff !default;
+$intro-background-image:					false !default;
+$intro-background-repeat:					no-repeat !default;
+$intro-background-size:						auto !default;
+$intro-background-attachment:				scroll !default;
+$intro-text-color:							#91929c !default;
+$intro-heading-color:						#2d3d4d !default;
+
+// Feature
+$feature-background-color:					#ffffff !default;
+$feature-background-image:					false !default;
+$feature-background-repeat:					no-repeat !default;
+$feature-background-size:					auto !default;
+$feature-background-attachment:				scroll !default;
+$feature-text-color:						#91929c !default;
+$feature-heading-color:						#2d3d4d !default;
+
+// Subfeature
+$subfeature-background-color:				#f8f9fa !default;
+$subfeature-background-image:				false !default;
+$subfeature-background-repeat:				no-repeat !default;
+$subfeature-background-size:				auto !default;
+$subfeature-background-attachment:			scroll !default;
+$subfeature-text-color:						#91929c !default;
+$subfeature-heading-color:					#2d3d4d !default;
+
+// Utility
+$utility-background-color:					#ffffff !default;
+$utility-background-image:					false !default;
+$utility-background-repeat:					no-repeat !default;
+$utility-background-size:					auto !default;
+$utility-background-attachment:				scroll !default;
+$utility-text-color:						#91929c !default;
+$utility-heading-color:						#2d3d4d !default;
+
+// Maintop
+$maintop-background-color:					#f8f9fa !default;
+$maintop-background-image:					false !default;
+$maintop-background-repeat:					no-repeat !default;
+$maintop-background-size:					auto !default;
+$maintop-background-attachment:				scroll !default;
+$maintop-text-color:						#91929c !default;
+$maintop-heading-color:						#2d3d4d !default;
+
+// System Messsages
+$systemmessages-background-color:			#ffffff !default;
+$systemmessages-background-image:			false !default;
+$systemmessages-background-repeat:			no-repeat !default;
+$systemmessages-background-size:			auto !default;
+$systemmessages-background-attachment:		scroll !default;
+$systemmessages-text-color:					#91929c !default;
+$systemmessages-heading-color:				#2d3d4d !default;
+
+// Sidebar
+$sidebar-background-color:					#ffffff !default;
+$sidebar-background-image:					false !default;
+$sidebar-background-repeat:					no-repeat !default;
+$sidebar-background-size:					auto !default;
+$sidebar-background-attachment:				scroll !default;
+$sidebar-text-color:						#91929c !default;
+$sidebar-heading-color:						#2d3d4d !default;
+
+// Mainbody
+$mainbody-background-color:					#ffffff !default;
+$mainbody-background-image:					false !default;
+$mainbody-background-repeat:				no-repeat !default;
+$mainbody-background-size:					auto !default;
+$mainbody-background-attachment:			scroll !default;
+$mainbody-text-color:						#91929c !default;
+$mainbody-heading-color:					#2d3d4d !default;
+
+
+// Aside
+$aside-background-color:					#ffffff !default;
+$aside-background-image:					false !default;
+$aside-background-repeat:					no-repeat !default;
+$aside-background-size:						auto !default;
+$aside-background-attachment:				scroll !default;
+$aside-text-color:							#91929c !default;
+$aside-heading-color:						#2d3d4d !default;
+
+// MainBottom
+$mainbottom-background-color:				#ffffff !default;
+$mainbottom-background-image:				false !default;
+$mainbottom-background-repeat:				no-repeat !default;
+$mainbottom-background-size:				auto !default;
+$mainbottom-background-attachment:			scroll !default;
+$mainbottom-text-color:						#91929c !default;
+$mainbottom-heading-color:					#2d3d4d !default;
+
+// Extension
+$extension-background-color:				#f8f9fa !default;
+$extension-background-image:				false !default;
+$extension-background-repeat:				no-repeat !default;
+$extension-background-size:					auto !default;
+$extension-background-attachment:			scroll !default;
+$extension-text-color:						#91929c !default;
+$extension-heading-color:					#2d3d4d !default;
+
+// Additional
+$additional-background-color:				#ffffff !default;
+$additional-background-image:				false !default;
+$additional-background-repeat:				no-repeat !default;
+$additional-background-size:				auto !default;
+$additional-background-attachment:			scroll !default;
+$additional-text-color:						#91929c !default;
+$additional-heading-color:					#2d3d4d !default;
+
+// PreBottom
+$prebottom-background-color:				#f8f9fa !default;
+$prebottom-background-image:				false !default;
+$prebottom-background-repeat:				no-repeat !default;
+$prebottom-background-size:					auto !default;
+$prebottom-background-attachment:			scroll !default;
+$prebottom-text-color:						#91929c !default;
+$prebottom-heading-color:					#2d3d4d !default;
+
+// Bottom
+$bottom-background-color:					#ffffff !default;
+$bottom-background-image:					false !default;
+$bottom-background-repeat:					no-repeat !default;
+$bottom-background-size:					auto !default;
+$bottom-background-attachment:				scroll !default;
+$bottom-text-color:							#91929c !default;
+$bottom-heading-color:						#2d3d4d !default;
+
+// AfterBottom
+$afterbottom-background-color:				#ffffff !default;
+$afterbottom-background-image:				false !default;
+$afterbottom-background-repeat:				no-repeat !default;
+$afterbottom-background-size:				auto !default;
+$afterbottom-background-attachment:			scroll !default;
+$afterbottom-text-color:					#91929c !default;
+$afterbottom-heading-color:					#2d3d4d !default;
+
+// Last
+$last-background-color:						#ffffff !default;
+$last-background-image:						false !default;
+$last-background-repeat:					no-repeat !default;
+$last-background-size:						auto !default;
+$last-background-attachment:				scroll !default;
+$last-text-color:							#91929c !default;
+$last-heading-color:						#2d3d4d !default;
+
+// Footer
+$footer-background-color:					#2e373c !default;
+$footer-background-image:					false !default;
+$footer-background-repeat:					no-repeat !default;
+$footer-background-size:					auto !default;
+$footer-background-attachment:				scroll !default;
+$footer-text-color:							#91929c !default;
+$footer-heading-color:						#ffffff !default;
+
+// Copyright
+$copyright-background-color:				#2e373c !default;
+$copyright-background-image:				false !default;
+$copyright-background-repeat:				no-repeat !default;
+$copyright-background-size:					auto !default;
+$copyright-background-attachment:			scroll !default;
+$copyright-text-color:						#91929c !default;
+$copyright-heading-color:					#ffffff !default;
+
+// Off Canvas
+$offcanvas-background:						#ffffff !default;
+$offcanvas-text-color:						#91929c !default;
+$offcanvas-toggle-color:					#91929c !default;
+$offcanvas-overlay:							rgba(0, 0, 0, 0.6) !default;
+
+// Block Variations
+$box1-background:							#ffffff !default;
+$box2-background:							#e0e0e0 !default;
+
+// System Messsages and Alerts
+$warning-color:								#c09853;
+$error-color:								#b94a48;
+$info-color:								#3a87ad;
+$success-color:								#468847;
+
+// Typography
+$rule-color:								#F0F2F4;
+$code-text:									#d05;
+$code-bg:									#fafafa;
+$pre-text:									#237794;
+$pre-bg:									#f8f8f8;
+
+// Borders
+$border-color-hover:						darken($base-border-color, 10%);
+$border-color-focus:						$accent-color-1;
+
+// Shadows
+$base-box-shadow: 							inset 0 1px 3px hsla(0, 0%, 0%, 0.06);

@@ -1,0 +1,58 @@
+.moredetails {
+  background-color: $primary-color;
+  padding: 40px 15px;
+
+  &__header {
+    margin-left: -15px;
+    text-align: center;
+
+    span {
+      color: $white;
+      font-family: 'Patua One';
+      font-size: 40px;
+      font-weight: 400;
+
+      &:before {
+        border-bottom: 5px solid $secondary-color;
+        content: ' ';
+        margin-left: 75px;
+        margin-top: -10px;
+        position: absolute;
+        width: 55px;
+      }
+    }
+  }
+
+  .g-block {
+    border: 1px solid $secondary-color;
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .g-content {
+    &-pro-title {
+      color: #8bc53f !important;
+      font-size: 32px;
+      font-weight: 700;
+      margin: 30px auto;
+      text-transform: uppercase;
+    }
+
+    &-pro-des {
+      color: $white;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+    }
+
+    &-pro-image {
+      background-color: $white;
+      background-size: 215px;
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+#g-fullwidth {
+	padding: 0;
+	> .g-container {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.g-content {
+		padding: 0;
+		margin: 0;
+	}
+	background-color: $fullwidth-background-color;
+	@if $fullwidth-background-image {
+    	background-image: url($fullwidth-background-image);
+    	background-repeat: unquote($fullwidth-background-repeat);
+    	background-size: unquote($fullwidth-background-size);
+    	background-attachment: unquote($fullwidth-background-attachment);
+	}
+	color: $fullwidth-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $fullwidth-heading-color;
+	}
+}
+
+@media print {
+	#g-fullwidth {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

@@ -1,0 +1,152 @@
+.button {
+  background-color: #8bc53f;
+  border-radius: 25px;
+  font-family: 'Patua One';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 13px;
+  padding: 15px 35px;
+
+  .standardbollards & {
+    margin-bottom: 25px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #618532;
+    color: $white;
+    text-decoration: none;
+  }
+}
+//
+//.readmore {
+//  .btn {
+//      //background-color: #8bc53f !important ;
+//      color: white !important;
+//      font-family: 'Patua One';
+//      font-size: 16px !important;
+//      font-weight: 400;
+//      height: 41px;
+//      line-height: 28px !important;
+//      width: 125px;
+//      border-radius: 20px !important;
+//
+//      &:hover,
+//      &:focus {
+//        text-decoration: none !important;
+//        background-color: #618532 !important;
+//      }
+//  }
+//}
+
+
+//.mor_btn {
+//  background: $color_atlantis_approx;
+//  border-radius: 45px;
+//  display: inline-block;
+//  margin-right: 11px;
+//  padding: 10px 19px;
+//
+//  &:hover,
+//  &:focus {
+//    background: $color_olive_drab_approx;
+//  }
+//
+//  a {
+//    color: $white;
+//    font-family: 'Patua One';
+//    font-size: 16px;
+//
+//    button {
+//      background: none;
+//      vertical-align: top;
+//    }
+//  }
+//}
+//
+//
+//.bt-cs {
+//  .bt-inner {
+//    .bt-title {
+//      color: $color_mine_shaft_approx;
+//      font-size: 56px;
+//      font-weight: normal;
+//      line-height: 60px;
+//      margin-bottom: 17px;
+//      text-transform: capitalize;
+//    }
+//
+//    .bt-introtext {
+//
+//      p {
+//        color: $color_mine_shaft_approx;
+//        font-family: 'roboto !important';
+//        font-size: 16px !important;
+//        line-height: 25px !important;
+//        margin-bottom: 15px !important;
+//      }
+//
+//      .mor_btn {
+//        padding: 9px 30px;
+//      }
+//    }
+//
+//    img {
+//    }
+//  }
+//
+//  .bt-row {
+//    padding: 0;
+//  }
+//
+//  a {
+//    &.next {
+//      @extend %extend_1;
+//      left: 31px;
+//      right: auto;
+//
+//      transform: translate(45px, 0);
+//      &:hover {
+//        background: url('../images/rehover_right.png') no-repeat !important;
+//        background-position: bottom center !important;
+//      }
+//    }
+//
+//    &.prev {
+//      @extend %extend_1;
+//      left: 30px;
+//
+//      &:hover {
+//        background: url('../images/rehover_left.png') no-repeat !important;
+//        background-position: bottom center !important;
+//      }
+//    }
+//  }
+//
+//  .bt-center {
+//    text-align: right;
+//  }
+//
+//  .slides_container .bt-inner {
+//    padding: 0;
+//
+//    .readmore {
+//      background: $color_atlantis_approx;
+//      border-radius: 45px;
+//      display: inline-block;
+//      margin-right: 11px;
+//      padding: 9px 30px;
+//
+//      &:hover,
+//      &:focus {
+//        background-color: $color_olive_drab_approx;
+//      }
+//
+//      a {
+//        color: $white;
+//        font-family: 'Patua One';
+//        font-size: 16px;
+//      }
+//    }
+//  }
+//}

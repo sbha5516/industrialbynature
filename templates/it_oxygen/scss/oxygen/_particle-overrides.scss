@@ -1,0 +1,34 @@
+// Override for Particles Title and Introtext that comes from "UIkit for Gantry5" atom
+body {
+	.g-particle-intro {
+		margin-bottom: 3rem;
+		text-align: center;
+		.g-particle-intro {
+			margin-bottom: 3rem;
+		}
+		.g-main-title {
+			margin-bottom: 0;
+		}
+		.g-title-separator {
+			height: 2px;
+			width: 100px;
+			margin: 20px auto;
+			background: $accent-color-1;
+			&.no-intro-text {
+				margin: 2.5rem auto 0;
+			}
+		}
+	}
+}
+
+body {
+	// Offcanvas Toggle
+	.offcanvas-toggle-particle {
+		&.g-offcanvas-toggle {
+			color: $header-text-color;
+			&:hover {
+				color: $accent-color-1;
+			}
+		}
+	}
+}

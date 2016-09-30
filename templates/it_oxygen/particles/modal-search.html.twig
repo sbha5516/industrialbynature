@@ -1,0 +1,44 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set modalsearch %}
+	<a href="#modal-search" data-uk-modal><i class="fa fa-search"></i></a>
+
+	<div id="modal-search" class="uk-modal">
+		<div class="uk-modal-dialog">
+			<a class="uk-modal-close uk-close"></a>
+			{% if gantry.platform.getName() == 'joomla' %}
+				{{ gantry.platform.filter("{loadposition modal-search}")|html|raw }}
+			{% endif %}
+
+			{% if gantry.platform.getName() == 'wordpress' %}
+				{# Something here #}
+			{% endif %}
+		</div>
+	</div>
+{% endset %}
+
+{% set modalsearch_s2 %}
+	<a href="#modal-search" data-uk-modal="{center:true}"><i class="fa fa-search"></i></a>
+
+	<div id="modal-search" class="uk-modal">
+		<a class="uk-modal-close uk-close"></a>
+		<div class="uk-modal-dialog">
+			{% if gantry.platform.getName() == 'joomla' %}
+				{{ gantry.platform.filter("{loadposition modal-search}")|html|raw }}
+			{% endif %}
+
+			{% if gantry.platform.getName() == 'wordpress' %}
+				{# Something here #}
+			{% endif %}
+		</div>
+	</div>
+{% endset %}
+
+{% block particle %}
+	
+	<div class="modal-search-container {{ particle.style|default("style1")|e }}">
+		{% if particle.style|default("style1") == "style1" %}{{ modalsearch }}{% endif %}
+		{% if particle.style|default("style1") == "style2" %}{{ modalsearch_s2 }}{% endif %}
+	</div>
+
+{% endblock %}

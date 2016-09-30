@@ -1,0 +1,31 @@
+#g-header {
+  background-color: $white;
+  border-bottom: $border;
+  box-shadow: none;
+
+  >.g-container {
+    height: $header-height;
+    line-height: $header-height;
+  }
+
+  .g-content {
+    margin: 0;
+  }
+}
+
+.g-logo {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 770px) {
+  #g-header .g-logo img {
+    height: auto;
+    width: 140px !important;
+  }
+
+  .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    color: #7BA93F;
+    font-size: 30px; // making the hamburger clickable size
+  }
+}

@@ -1,0 +1,149 @@
+// Font Import
+@include import-font($fonts-body-font);
+@include import-font($fonts-heading-font);
+@include import-font($fonts-menu-font);
+
+body {
+	font-family: get-font-family($fonts-body-font);
+	font-weight: $font-weight-regular;
+	font-size: $fontsizes-body-font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: get-font-family($fonts-heading-font);
+	font-weight: $font-weight-medium;
+	margin-top: -5px;
+}
+
+h1 {
+	font-size: $fontsizes-body-font-size*2.3;
+}
+h2 {
+	font-size: $fontsizes-body-font-size*1.9;
+}
+h3 {
+	font-size: $fontsizes-body-font-size*1.5;
+}
+h4 {
+	font-size: $fontsizes-body-font-size*1.15;
+}
+h5 {
+	font-size: $fontsizes-body-font-size;
+}
+h6 {
+	font-size: $fontsizes-body-font-size*0.9;
+}
+
+.g-main-nav {
+	font-family: get-font-family($fonts-menu-font);
+	font-weight: $font-weight-regular;
+	font-size: $fontsizes-menu-font-size;
+}
+
+.g-main-nav .g-dropdown {
+	font-size: $fontsizes-menu-font-size*0.9;
+}
+
+bold, strong {
+	font-weight: $font-weight-bold;
+}
+
+.button {
+	font-weight: $font-weight-medium;
+}
+
+// Blockquote
+blockquote {
+	border-left: 10px solid $rule-color;
+	p {
+		font-size: $fontsizes-body-font-size + 0.1;
+		color: lighten($base-text-color, 20%);
+		margin-bottom: 1rem !important;
+	}
+	cite {
+		display: block;
+		text-align: right;
+		color: $base-text-color;
+		font-size: $fontsizes-body-font-size + 0.2;
+	}
+	small {
+		&:before {
+			content: none !important;
+		}
+	}
+}
+
+// Inline and Code
+code {
+	background: $code-bg;
+	color: $code-text;
+	font-size: $fontsizes-body-font-size*0.9;
+	border: 1px solid $base-border-color;
+}
+
+pre {
+	padding: 1rem;
+	margin: 2rem 0;
+	background: $pre-bg;
+	border: 1px solid $base-border-color;
+	border-radius: $core-border-radius;
+	line-height: 1.15;
+	font-size: $fontsizes-body-font-size*0.9;
+	border: 1px solid $base-border-color;
+
+	code {
+		color: $pre-text;
+		background: inherit;
+		font-size: $fontsizes-body-font-size*0.9;
+	}
+	&.prettyprint {
+		border: 1px solid $base-border-color !important;
+		padding: 1rem !important;
+	}
+}
+
+// Additional
+hr {
+	border-bottom: 1px solid $base-border-color;
+	&.uk-article-divider {
+		border-color: $base-border-color;
+		margin-bottom: 35px;
+	}
+}
+
+* + .uk-article-divider {
+	margin-top: 35px;
+}
+
+.uk-table-hover tbody tr:hover {
+	background: $base-element-color;
+}
+
+.uk-badge {
+	margin-right: 5px;
+}
+
+.g-typography-page {
+	> section {
+		margin-top: 150px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+iframe {
+	border: none;
+}
+
+.uk-accordion {
+	.uk-accordion-title {
+		background: $base-element-color;
+		border: 1px solid $base-border-color;
+		border-radius: 3px;
+	}
+}
+
+.uk-tab-grid::before {
+	border-color: $base-border-color;
+}

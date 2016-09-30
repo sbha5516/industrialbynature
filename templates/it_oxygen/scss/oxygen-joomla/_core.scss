@@ -1,0 +1,201 @@
+.btn-group > .btn + .dropdown-toggle {
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.btn-group.open .btn-primary.dropdown-toggle {
+	background: darken($accent-color-1, 5%);
+	color: $white;
+	box-shadow: inset -1px -1px 1px rgba(0,0,0,0.15);
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+	background-image: none;
+	background-color: $accent-color-1;
+}
+
+.btn-link {
+	color: $accent-color-1;
+}
+
+// Joomla Login Module
+#login-form {
+	margin-bottom: 0;
+	#form-login-remember {
+		margin: 20px 0 10px;
+		input {
+			margin: 0 5px 0 0;
+		}
+	}
+	ul.unstyled {
+		margin: 20px 0 0;
+		a {
+			color: $base-title-color;
+			&:hover {
+				color: $accent-color-1;
+			}
+			i {
+				margin-right: 7px;
+			}
+		}
+	}
+}
+
+// Joomla Menu Module
+.nav {
+	margin: 0;
+	li {
+		margin-bottom: 6.5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		a {
+			color: $base-title-color;
+			&:before {
+				content:"\f105";
+				font-family: FontAwesome;
+				margin-right: rem(10px);
+			}
+			&:hover {
+				color: $accent-color-1;
+			}
+		}
+		span {
+			&:before {
+				content:"\f105";
+				font-family: FontAwesome;
+				margin-right: rem(10px);
+			}
+		}
+		ul {
+			margin-top: 6.5px;
+			margin-bottom: 6.5px;
+		}
+		&.current {
+			> a, > span {
+				color: $accent-color-1;
+			}
+		}
+	}
+}
+
+// Bootstrap "well" styling
+.well {
+	background: $base-element-color;
+	border: 1px solid $base-border-color;
+	box-shadow: none;
+	padding: 30px 30px 10px;
+}
+
+// Joomla Login Page
+.login {
+	> form {
+		fieldset {
+			.control-group {
+				.control-label {
+					text-align: left;
+					padding-top: 10px;
+				}
+				#remember {
+					margin-top: 10px;
+					@include breakpoint(mobile-only) {
+						width: auto;
+					}
+				}
+				input {
+					@include breakpoint(mobile-only) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.logout {
+	.controls {
+		margin-left: 0;
+	}
+}
+
+ul.nav-tabs.nav-stacked {
+	> li {
+		> a {
+			border: 1px solid $base-border-color;
+			&:hover {
+				border: 1px solid $base-border-color;
+			}
+		}
+	}
+}
+
+// Joomla Registration Page
+.registration {
+	#member-registration {
+		margin-bottom: 0;
+		legend + .control-group {
+			margin-top: 0;
+		}
+		.control-group {
+			.control-label {
+				text-align: left;
+				padding-top: 10px;
+			}
+			input {
+				@include breakpoint(mobile-only) {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// Joomla Username Remind and Password Reset Pages
+.remind, .reset {
+	#user-registration {
+		margin-bottom: 0;
+		fieldset {
+			p {
+				margin-top: 0;
+			}
+		}
+		.control-group {
+			.control-label {
+				text-align: left;
+				padding-top: 10px;
+			}
+		}
+	}
+}
+
+// Joomla User Profile Page
+.profile {
+	> ul.btn-toolbar {
+		margin-top: 0;
+	}
+	#users-profile-core {
+		margin-bottom: 20px;
+	}
+	fieldset {
+		dl {
+			dt {
+				text-align: left;
+			}
+		}
+	}
+}
+
+// Joomla User Edit Profile
+.profile-edit {
+	#member-profile {
+		margin-bottom: 0;
+		.control-group {
+			.control-label {
+				text-align: left;
+				padding-top: 10px;
+			}
+			.chzn-container {
+				padding-top: 8px;
+			}
+		}
+	}
+}

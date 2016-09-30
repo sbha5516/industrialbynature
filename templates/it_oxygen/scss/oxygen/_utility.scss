@@ -1,0 +1,21 @@
+#g-utility {
+	padding: $section-padding 0;
+	background-color: $utility-background-color;
+	@if $utility-background-image {
+    	background-image: url($utility-background-image);
+    	background-repeat: unquote($utility-background-repeat);
+    	background-size: unquote($utility-background-size);
+    	background-attachment: unquote($utility-background-attachment);
+	}
+	color: $utility-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $utility-heading-color;
+	}
+}
+
+@media print {
+	#g-utility {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

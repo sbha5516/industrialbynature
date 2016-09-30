@@ -1,0 +1,91 @@
+.modal-search-container {
+	&.style1 {
+		.uk-modal-dialog {
+			text-align: left;
+			.search {
+				form {
+					margin-bottom: 0;
+				}
+				input {
+					margin-bottom: 0;
+					border: 0;
+					box-shadow: none !important;
+					font-size: 2rem;
+					color: $base-text-color;
+				}
+			}
+		}
+	}
+	&.style2 {
+		#modal-search {
+			background: rgba(0, 0, 0, 0.7);
+			&.uk-open {
+				.uk-modal-dialog {
+					@include transform(scale(1));
+				}
+				.uk-close {
+					@include transform(scale(1));
+				}
+			}
+			.uk-modal-dialog {
+				padding: 0;
+				border-radius: 0;
+				width: 455px;
+				background: none;
+				box-shadow: none;
+				@include transform(scale(0));
+				.search {
+					form {
+						margin-bottom: 0;
+					}
+					input {
+						margin-bottom: 0;
+						border: 0;
+						font-size: 2.3rem;
+						width: 455px;
+						color: #ffffff;
+						text-align: center;
+						background: none;
+						padding: 20px;
+						border-radius: 0;
+						box-shadow: 0 3px 0 0 rgba(255, 255, 255, 0.3);
+						@include placeholder {
+							color: #ffffff;
+							opacity: 1;
+						}
+						&:focus {
+							box-shadow: 0 3px 0 0 rgba(255, 255, 255, 1);
+						}
+					}
+				}
+			}
+			.uk-close {
+				color: #ffffff !important;
+				opacity: 1;
+				font-size: 22px;
+				top: 35px;
+				right: 35px;
+				position: absolute;
+				@include transform(scale(0));
+				@include transition(all 0.3s);
+				&:hover {
+					@include transform(rotate(90deg));
+					color: $accent-color-1 !important;
+				}
+			}
+		}
+	}
+	// Joomla class for the Search
+	.element-invisible {
+		border: 0 none;
+		height: 1px;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+	i {
+		opacity: 1 !important;
+	}
+}

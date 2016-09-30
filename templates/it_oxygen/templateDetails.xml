@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<extension version="3.4" type="template" client="site" method="upgrade">
+    <name>it_oxygen</name>
+    <version>1.4.0</version>
+    <creationDate>November, 2015</creationDate>
+    <author>InspireTheme LTD</author>
+    <authorEmail>office@inspiretheme.com</authorEmail>
+    <authorUrl>http://www.inspiretheme.com</authorUrl>
+    <copyright>(C) InspireTheme LTD. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2</license>
+    <description>TPL_IT_OXYGEN_DESC</description>
+
+    <scriptfile>install.php</scriptfile>
+
+    <files>
+        <folder>admin</folder>
+        <folder>blueprints</folder>
+        <folder>config</folder>
+        <folder>fields</folder>
+        <folder>fonts</folder>
+        <folder>gantry</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>includes</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+        <folder>layouts</folder>
+        <folder>particles</folder>
+        <folder>roksprocket</folder>
+        <folder>scss</folder>
+        <folder>uikit</folder>
+        <file>component.php</file>
+        <file>error.php</file>
+        <file>index.php</file>
+        <file>offline.php</file>
+        <file>template_preview.png</file>
+        <file>template_thumbnail.png</file>
+        <file>MD5SUMS</file>
+    </files>
+
+    <positions>
+        <position>additional-a</position>
+        <position>additional-b</position>
+        <position>additional-c</position>
+        <position>additional-d</position>
+        <position>afterbottom-a</position>
+        <position>afterbottom-b</position>
+        <position>afterbottom-c</position>
+        <position>afterbottom-d</position>
+        <position>bottom-a</position>
+        <position>bottom-b</position>
+        <position>bottom-c</position>
+        <position>bottom-d</position>
+        <position>breadcrumb-a</position>
+        <position>breadcrumb-b</position>
+        <position>breadcrumb-c</position>
+        <position>breadcrumb-d</position>
+        <position>content-bottom-a</position>
+        <position>content-bottom-b</position>
+        <position>content-top-a</position>
+        <position>content-top-b</position>
+        <position>copyright-a</position>
+        <position>copyright-b</position>
+        <position>copyright-c</position>
+        <position>copyright-d</position>
+        <position>debug</position>
+        <position>drawer</position>
+        <position>extension-a</position>
+        <position>extension-b</position>
+        <position>extension-c</position>
+        <position>extension-d</position>
+        <position>feature-a</position>
+        <position>feature-b</position>
+        <position>feature-c</position>
+        <position>feature-d</position>
+        <position>footer</position>
+        <position>footer-a</position>
+        <position>footer-b</position>
+        <position>footer-c</position>
+        <position>footer-d</position>
+        <position>fullwidth</position>
+        <position>fullwidth-left</position>
+        <position>fullwidth-right</position>
+        <position>intro-a</position>
+        <position>intro-b</position>
+        <position>intro-c</position>
+        <position>intro-d</position>
+        <position>last-a</position>
+        <position>last-b</position>
+        <position>last-c</position>
+        <position>last-d</position>
+        <position>mainbottom-a</position>
+        <position>mainbottom-b</position>
+        <position>mainbottom-c</position>
+        <position>mainbottom-d</position>
+        <position>maintop-a</position>
+        <position>maintop-b</position>
+        <position>maintop-c</position>
+        <position>maintop-d</position>
+        <position>navigation-a</position>
+        <position>navigation-b</position>
+        <position>navigation-c</position>
+        <position>navigation-d</position>
+        <position>offcanvas-a</position>
+        <position>offcanvas-b</position>
+        <position>prebottom-a</position>
+        <position>prebottom-b</position>
+        <position>prebottom-c</position>
+        <position>prebottom-d</position>
+        <position>showcase-a</position>
+        <position>showcase-b</position>
+        <position>showcase-c</position>
+        <position>showcase-d</position>
+        <position>sidebar-left</position>
+        <position>sidebar-right</position>
+        <position>subfeature-a</position>
+        <position>subfeature-b</position>
+        <position>subfeature-c</position>
+        <position>subfeature-d</position>
+        <position>top-a</position>
+        <position>top-b</position>
+        <position>top-c</position>
+        <position>top-d</position>
+        <position>utility-a</position>
+        <position>utility-b</position>
+        <position>utility-c</position>
+        <position>utility-d</position>
+    </positions>
+
+    <config>
+        <fields name="params" addfieldpath="/templates/it_oxygen/fields">
+            <fieldset name="advanced">
+                <field name="warning" type="warning"/>
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>

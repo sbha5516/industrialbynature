@@ -1,0 +1,16 @@
+body #g-to-top .style1 #g-totop-button {
+  background-color: $sub-menu-color;
+
+  &:hover,
+  &:focus {
+    background-color: $sub-menu-color-hover;
+  }
+}
+
+.fa.fa-angle-up {
+  font-size: 30px;
+}
+
+.uk-close:after {
+  opacity: 1;
+}

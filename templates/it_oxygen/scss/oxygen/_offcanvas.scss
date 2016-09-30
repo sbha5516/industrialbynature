@@ -1,0 +1,247 @@
+#g-offcanvas {
+	background: $offcanvas-background;
+	width: $offcanvas-width;
+	color: $offcanvas-text-color;
+	a {
+		color: lighten($offcanvas-background, 50%);
+		&:hover {
+			color: $offcanvas-text-color;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $offcanvas-text-color;
+	}
+
+	.button {
+		background: $accent-color-2;
+		color: $offcanvas-text-color;
+		&:hover {
+			background: lighten($accent-color-2, 5%);
+		}
+		&:active {
+			background: darken($accent-color-2, 5%);
+		}
+	}
+}
+
+@if $offcanvas-toggle-position == "left" {
+	.g-offcanvas-toggle {
+		font-size: $fontsizes-body-font-size + 0.7;
+		color: $offcanvas-toggle-color;
+		left: $content-margin + $content-padding;
+		top: 34px;
+	}
+
+	.g-offcanvas-right {
+		.g-offcanvas-toggle {
+			right: auto;
+			left: $content-margin + $content-padding;
+		}
+	}
+}
+
+@if $offcanvas-toggle-position == "right" {
+	.g-offcanvas-toggle {
+		font-size: $fontsizes-body-font-size + 0.7;
+		color: $offcanvas-toggle-color;
+		left: auto;
+		right: $content-margin + $content-padding;
+		top: 34px;
+	}
+
+	.g-offcanvas-right {
+		.g-offcanvas-toggle {
+			left: auto;
+			right: $content-margin + $content-padding;
+		}
+	}
+}
+
+// Mobile Menu
+#g-offcanvas {
+	#g-mobilemenu-container {
+		ul {
+			background: $offcanvas-background;
+			> li {
+				@include transition(background 0.2s, color 0.2s);
+				&.g-menu-item-type-particle {
+					display: none !important;
+				}
+				> .g-menu-item-container {
+					color: $offcanvas-text-color;
+					border-bottom: 1px solid darken($offcanvas-background, 6%);
+				}
+				&:not(.g-menu-item-type-particle):not(.g-menu-item-type-module) {
+					&:hover, &.active {
+						background: $base-element-color;
+
+						> .g-menu-item-container {
+							color: darken($offcanvas-text-color, 20%);
+						}
+					}
+					&.active {
+						> .g-menu-item-container {
+							color: $accent-color-1;
+						}
+					}
+				}
+				&.g-menu-item-link-parent {
+					> .g-menu-item-container {
+						> .g-menu-parent-indicator {
+							border: 1px solid darken($offcanvas-background, 10%);
+							background: darken($base-element-color, 4%);
+							@include transition(background 0.2s, color 0.2s, border-color 0.2s);
+							&:hover {
+								background: $accent-color-1;
+								border: 1px solid $accent-color-1;
+								color: #ffffff;
+							}
+							border-radius: $core-border-radius;
+							margin: -0.2rem 0 -0.2rem 0.5rem;
+							padding: 0.2rem;
+							&:after {
+								content: "\f105";
+								opacity: 0.75;
+							}
+						}
+					}
+				}
+				&.g-parent {
+					.g-menu-parent-indicator {
+						&:after {
+							content: "\f105";
+						}
+						padding-right: 0.2rem;
+					}
+				}
+			}
+			.g-dropdown-column {
+				width: $offcanvas-width;
+			}
+		}
+	}
+}
+
+#g-mobilemenu-container {
+	margin: -($content-padding + $content-margin);
+}
+
+// Nav Overlay
+.g-nav-overlay, .g-menu-overlay {
+	background: $offcanvas-overlay;
+}
+
+@media print {
+	#g-offcanvas {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}
+
+.g-offcanvas-open {
+	&.g-offcanvas-css2 {
+	    .g-offcanvas-left {
+	        #g-page-surround {
+	            left: $offcanvas-width;
+	        }
+	    }
+
+	    .g-offcanvas-right {
+	        #g-page-surround {
+	            right: $offcanvas-width;
+	        }
+	    }
+	}
+}
+
+.g-offcanvas-open {
+	.g-nav-overlay {
+		z-index: 1010;
+	}
+	&.g-offcanvas-css2 {
+		.g-offcanvas-left {
+			#g-header, #g-top {
+				&.uk-active {
+					margin-left: $offcanvas-width;
+				}
+			}
+		}
+		.g-offcanvas-right {
+			#g-header, #g-top {
+				&.uk-active {
+					margin-left: -$offcanvas-width;
+				}
+			}
+		}
+	}
+}
+
+.g-offcanvas-closing {
+	&.g-offcanvas-css2 {
+		.g-offcanvas-left {
+			#g-header, #g-top {
+				&.uk-active {
+					margin-left: 0;
+				}
+			}
+		}
+		.g-offcanvas-right {
+			#g-header, #g-top {
+				&.uk-active {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+// Fix for the UIkit Sticky Header in IE 10 and 11
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.g-offcanvas-open {
+	.g-nav-overlay {
+		z-index: 1010;
+	}
+	.g-offcanvas-left {
+		#g-header, #g-top {
+			&.uk-active {
+				margin-left: $offcanvas-width;
+			}
+		}
+	}
+	.g-offcanvas-right {
+		#g-header, #g-top {
+			&.uk-active {
+				margin-left: -$offcanvas-width;
+			}
+		}
+	}
+}
+
+.g-offcanvas-closing {
+	.g-offcanvas-left {
+		#g-header, #g-top {
+			&.uk-active {
+				margin-left: 0;
+			}
+		}
+	}
+	.g-offcanvas-right {
+		#g-header, #g-top {
+			&.uk-active {
+				margin-left: 0;
+			}
+		}
+	}
+}
+}
+
+#g-header, #g-top {
+	&.uk-active {
+		@include transition(margin 0.3s);
+	}
+}
+
+.g-nav-overlay, .g-menu-overlay {
+	@include transition(opacity 0.3s ease-out 0s, z-index 0s);
+}

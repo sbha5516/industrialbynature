@@ -1,0 +1,118 @@
+.search {
+	.search-form-results {
+		width: 500px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 50px;
+		border: 1px solid $base-border-color;
+		margin-bottom: 70px;
+		background: $base-element-color;
+		@include breakpoint(mobile-only) {
+			width: 100%;
+		}
+		@include breakpoint(tablet-range) {
+			width: 100%;
+		}
+		.btn-toolbar {
+			margin-top: 0;
+			.btn-group {
+				float: none;
+				margin: 0;
+				input {
+					width: 100%;
+					margin: 0;
+					border-right: none;
+					@include breakpoint(small-mobile-range) {
+						width: 120px;
+					}
+				}
+				.btn {
+					padding: 0.58rem 1rem !important;
+					border-radius: 0 $core-border-radius $core-border-radius 0 !important;
+					> span {
+						vertical-align: middle;
+						margin: 0;
+					}
+				}
+			}
+		}
+		.searchintro {
+			> p {
+				margin-bottom: 0;
+			}
+			.badge {
+				background: $accent-color-1;
+				text-shadow: none;
+			}
+		}
+	}
+	.search-add-options {
+		padding: 50px;
+		border: 1px solid $base-border-color;
+		margin: 0 auto 50px;
+		width: 600px;
+		background: $base-element-color;
+		@include breakpoint(mobile-only) {
+			width: 100%;
+		}
+		@include breakpoint(tablet-range) {
+			width: 100%;
+		}
+		@include breakpoint(desktop-range) {
+			width: 550px;
+		}
+		> fieldset {
+			display: inline-block;
+			&:first-child {
+				margin-right: 50px;
+				@include breakpoint(mobile-only) {
+					margin-bottom: 50px;
+				}
+				@include breakpoint(tablet-range) {
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+	.search-results {
+		.result-item {
+			padding: 40px 0 40px 50px;
+			border-top: 1px solid $base-border-color;
+			position: relative;
+			.item-number {
+				position: absolute;
+				left: 0;
+				border: 1px solid $base-border-color;
+				text-align: center;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				border-radius: $core-border-radius;
+			}
+			.result-title {
+				line-height: 30px;
+				h4 {
+					a {
+						color: $base-title-color;
+						&:hover {
+							color: $accent-color-1;
+						}
+					}
+				}
+			}
+			dd {
+				margin: 0;
+			}
+			.search-item-info {
+				margin-top: 20px;
+				dd {
+					display: inline-block;
+					margin-right: 20px;
+					i {
+						margin-right: 7px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,69 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set attr_extra = '' %}
+{% if particle.extra %}
+    {% for attributes in particle.extra %}
+        {% for key, value in attributes %}
+            {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% set particleheading %}
+	<div class="g-particle-intro">
+		{% if particle.mainheading %}
+			<h3 class="g-title g-main-title">{{ particle.mainheading|raw }}</h3>
+			<div class="g-title-separator {% if particle.introtext == false %}no-intro-text{% endif %}"></div>
+		{% endif %}	
+		{% if particle.introtext %}<p class="g-introtext">{{ particle.introtext|raw }}</p>{% endif %}
+	</div>
+{% endset %}
+
+{% block particle %}
+    <div class="g-pricing-tables {{ particle.style|default("style1")|e }}{% if particle.css.class %} {{ particle.css.class|e }}{% endif %}{% if particle.gutter|default('enabled') == 'enabled' %} gutter-enabled{% else %} gutter-disabled{% endif %}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %}>
+		{% if particle.mainheading or particle.introtext %}
+			{{ particleheading }}
+		{% endif %}
+    	
+    	<div class="g-grid">
+	        {% for item in particle.items %}
+		       	{% set attr_extra_item = '' %}
+				{% for extra in item.extra %}
+					{% set attr_extra_item = attr_extra_item ~ ' ' ~ extra|keys|first|e ~ '="' ~ extra|values|first|e('html_attr') ~ '"' %}
+				{% endfor %}
+	        	<div class="g-block g-pricing-table{% if item.class %} {{ item.class|e }}{% endif %}{% if item.featured %} featured-table{% endif %}" {% if item.extra %}{{ attr_extra_item|raw }}{% endif %}>
+	        		<div {% if particle.gutter|default('enabled') == 'enabled' %}class="g-content"{% endif %}>
+	        			<div class="g-pricing-table-inner">
+	        				{% if item.title or item.price %}
+	        					<div class="g-table-head">
+			        				{% if item.title %}<div class="g-table-title"><h4>{{ item.title|raw }}</h4></div>{% endif %}
+			        				{% if item.price %}<div class="g-table-price">{{ item.price|raw }}</div>{% endif %}
+			        				{% if item.period %}<div class="g-table-period">{{ item.period|raw }}</div>{% endif %}
+	        					</div>
+	        				{% endif %}
+	        				{% if item.item1 or item.item2 or item.item3 or item.item4 or item.item5 or item.item6 or item.item7 or item.item8 %}
+	        					<div class="g-table-body">
+			        				{% if item.item1 %}<div class="g-table-item">{{ item.item1|raw }}</div>{% endif %}
+			        				{% if item.item2 %}<div class="g-table-item">{{ item.item2|raw }}</div>{% endif %}
+			        				{% if item.item3 %}<div class="g-table-item">{{ item.item3|raw }}</div>{% endif %}
+			        				{% if item.item4 %}<div class="g-table-item">{{ item.item4|raw }}</div>{% endif %}
+			        				{% if item.item5 %}<div class="g-table-item">{{ item.item5|raw }}</div>{% endif %}
+			        				{% if item.item6 %}<div class="g-table-item">{{ item.item6|raw }}</div>{% endif %}
+			        				{% if item.item7 %}<div class="g-table-item">{{ item.item7|raw }}</div>{% endif %}
+			        				{% if item.item8 %}<div class="g-table-item">{{ item.item8|raw }}</div>{% endif %}
+			        			</div>
+			        		{% endif %}
+			        		{% if item.link or item.buttontext %}
+			        			<div class="g-table-button">
+			        				<a class="button {% if particle.style|default("style1") == 'style1' or (particle.style|default("style1") == 'style2' and item.featured == false) %} empty{% endif %}" target="{{ item.target|default('_parent')|e }}" href="{{ item.link|e }}">
+			        					{% if item.buttonicon %}<i class="{{ item.buttonicon|e }}"></i>{% endif %}{{ item.buttontext|e }}
+			        				</a>
+			        			</div>
+			        		{% endif %}
+	        			</div>
+		        	</div>
+	            </div>
+	        {% endfor %}
+    	</div>
+	</div>
+{% endblock %}

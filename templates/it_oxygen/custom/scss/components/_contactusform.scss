@@ -1,0 +1,31 @@
+.platform-content input,
+#jform_contact_message {
+  width: 100%;
+}
+
+body .btn.btn-primary.validate {
+  border-radius: 20px !important;
+  color: white !important;
+  font-family: 'Patua One';
+  font-size: 16px !important;
+  font-weight: 400;
+  width: 125px !important;
+
+  &:hover,
+  &:focus {
+    background-color: #618532 !important;
+  }
+}
+
+.contact-address.dl-horizontal {
+  display: none;
+}
+
+#system-message-container #system-message .alert {
+  background-color: #618532 !important;
+  color: white;
+
+  .alert-heading {
+    color: #333;
+  }
+}

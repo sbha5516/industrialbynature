@@ -1,0 +1,44 @@
+#g-navigation {
+	background-color: $navigation-background-color;
+	@if $navigation-background-image {
+    	background-image: url($navigation-background-image);
+    	background-repeat: unquote($navigation-background-repeat);
+    	background-size: unquote($navigation-background-size);
+    	background-attachment: unquote($navigation-background-attachment);
+	}
+	color: $navigation-text-color;
+	position: relative;
+	z-index: 2;
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $navigation-heading-color;
+	}
+
+	.g-container {
+		position: relative;
+	}
+
+}
+
+#g-navigation, #g-header {
+	.align-left {
+		.g-toplevel {
+			justify-content: flex-start;
+			-webkit-justify-content: flex-start;
+		}
+	}
+
+	.align-right {
+		.g-toplevel {
+			justify-content: flex-end;
+			-webkit-justify-content: flex-end;
+		}
+	}
+}
+
+@media print {
+	#g-navigation {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

@@ -1,0 +1,24 @@
+#g-breadcrumb {
+	padding: 0.3rem 0;
+	background-color: $breadcrumb-background-color;
+	@if $breadcrumb-background-image {
+    	background-image: url($breadcrumb-background-image);
+    	background-repeat: unquote($breadcrumb-background-repeat);
+    	background-size: unquote($breadcrumb-background-size);
+    	background-attachment: unquote($breadcrumb-background-attachment);
+	}
+	color: $breadcrumb-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $breadcrumb-heading-color;
+	}
+	@include breakpoint(mobile-only) {
+		text-align: center;
+	}
+}
+
+@media print {
+	#g-breadcrumb {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

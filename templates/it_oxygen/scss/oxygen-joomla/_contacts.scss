@@ -1,0 +1,55 @@
+.contact {
+	> h3 {
+		display: none;
+	}
+	.contact-address {
+		margin: 0;
+	}
+	#contact-form {
+		margin-bottom: 0;
+		fieldset {
+			> legend {
+				font-size: $fontsizes-body-font-size*1.15;
+				color: $mainbody-heading-color;
+				margin-bottom: 0;
+			}
+		}
+		&.form-horizontal {
+			.control-label {
+				text-align: left;
+			}
+		}
+		input, textarea {
+			width: 300px;
+			@include breakpoint(mobile-only) {
+				width: 100%;
+			}
+			@include breakpoint(tablet-range) {
+				width: 100%;
+			}
+		}
+		#jform_contact_email_copy {
+			width: 10px;
+		}
+		label {
+			margin-top: 3px;
+		}
+		#jform_contact_email_copy-lbl {
+			margin-top: 0;
+		}
+		.form-actions {
+			@include breakpoint(mobile-only) {
+				padding: 0;
+				> button {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+		&.well {
+			border: none;
+			padding: 0;
+			background: none;
+		}
+	}
+}

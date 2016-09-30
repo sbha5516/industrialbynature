@@ -1,0 +1,19 @@
+javascript:
+  -
+    location: media/jui/js/jquery.min.js
+    inline: ''
+    in_footer: '0'
+    extra: {  }
+    name: jQuery
+  -
+    location: media/jui/js/jquery-noconflict.js
+    inline: ''
+    in_footer: '0'
+    extra: {  }
+    name: 'jQuery NoConflict'
+  -
+    location: media/jui/js/jquery-migrate.min.js
+    inline: ''
+    in_footer: '0'
+    extra: {  }
+    name: 'jQuery Migrate'

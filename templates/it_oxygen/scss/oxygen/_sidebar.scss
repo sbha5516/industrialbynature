@@ -1,0 +1,21 @@
+#g-sidebar {
+	padding: $section-padding 0;
+	background-color: $sidebar-background-color;
+	@if $sidebar-background-image {
+    	background-image: url($sidebar-background-image);
+    	background-repeat: unquote($sidebar-background-repeat);
+    	background-size: unquote($sidebar-background-size);
+    	background-attachment: unquote($sidebar-background-attachment);
+	}
+	color: $sidebar-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $sidebar-heading-color;
+	}
+}
+
+@media print {
+	#g-sidebar {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

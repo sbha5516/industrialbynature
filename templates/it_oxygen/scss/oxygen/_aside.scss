@@ -1,0 +1,21 @@
+#g-aside {
+	padding: $section-padding 0;
+	background-color: $aside-background-color;
+	@if $aside-background-image {
+    	background-image: url($aside-background-image);
+    	background-repeat: unquote($aside-background-repeat);
+    	background-size: unquote($aside-background-size);
+    	background-attachment: unquote($aside-background-attachment);
+	}
+	color: $aside-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $aside-heading-color;
+	}
+}
+
+@media print {
+	#g-aside {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

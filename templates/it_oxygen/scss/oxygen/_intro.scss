@@ -1,0 +1,21 @@
+#g-intro {
+	padding: $section-padding 0;
+	background-color: $intro-background-color;
+	@if $intro-background-image {
+    	background-image: url($intro-background-image);
+    	background-repeat: unquote($intro-background-repeat);
+    	background-size: unquote($intro-background-size);
+    	background-attachment: unquote($intro-background-attachment);
+	}
+	color: $intro-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $intro-heading-color;
+	}
+}
+
+@media print {
+	#g-intro {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

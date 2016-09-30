@@ -1,0 +1,109 @@
+// this is the breadcrumb for bike page
+#g-breadcrumb {
+  .page-bike & {
+    @extend %breadcrumb;
+    background-image: url('../../images/web/main/bike/bike-breadcrumb-bg.png');
+  }
+
+  .page-urban &,
+  .page-rockclimbing &,
+  .page-climbingkit &,
+  .page-play &{
+    @extend %breadcrumb;
+    background-image: url('../../images/urban/urbanbedcrum.jpg');
+  }
+}
+
+.breadcrumb {
+  .page-bike & {
+    @extend %libefore;
+    li {
+      &:before {
+        background: url('images/web/main/bike/biikebreadcrumbicon.png') 0 0 no-repeat transparent;
+        content: 'Bike';
+      }
+    }
+  }
+
+  .page-urban & {
+    @extend %libefore;
+    li {
+      &:before {
+        background: url('images/web/main/bike/urbanbreadcrumbicon.png') 0 0 no-repeat transparent;
+        content: 'Urban';
+      }
+    }
+  }
+
+  .page-rockclimbing & {
+    @extend %libefore;
+    li:first-child {
+      &:before {
+        background: url('images/web/main/bike/rockclimbingbreadcrumbicon.png') 0 0 no-repeat transparent;
+        content: 'Rock Climbing';
+      }
+    }
+
+     li:nth-child(2) {
+       @extend %sr-only;
+     }
+  }
+
+  .page-climbingkit & {
+    @extend %libefore;
+    li {
+      &:before {
+        background: url('images/web/main/bike/climbingkitbreadcrumbicon.png') 0 0 no-repeat transparent;
+        content: 'Climbing Kit';
+      }
+    }
+
+    li:nth-child(2) {
+      @extend %sr-only;
+    }
+  }
+
+
+  .page-play & {
+    @extend %libefore;
+    li {
+      &:before {
+        background: url('images/web/main/bike/climbingkitbreadcrumbicon.png') 0 0 no-repeat transparent;
+        content: 'Play';
+      }
+    }
+  }
+}
+
+.breadcrumb > li + li:before { // @TODO This should be done in a better way
+  display: none;
+}
+
+
+// this is the breadcrumb for about us / contsact us  page
+.aboutus-page,
+.contacus-page {
+  #g-breadcrumb {
+    background-image: none;
+    margin-left: 5px;
+    padding: 20px 0 30px;
+
+    .g-content {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .industrial-breadcrumb {
+    .active {
+      border-left: 5px solid $secondary-color;
+      color: $primary-color;
+      float: left;
+      font-family: 'Patua One';
+      font-size: 40px;
+      font-weight: 400;
+      margin: 0;
+      padding-left: 20px;
+    }
+  }
+}

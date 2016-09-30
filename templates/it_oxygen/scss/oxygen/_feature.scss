@@ -1,0 +1,21 @@
+#g-feature {
+	padding: $section-padding 0;
+	background-color: $feature-background-color;
+	@if $feature-background-image {
+    	background-image: url($feature-background-image);
+    	background-repeat: unquote($feature-background-repeat);
+    	background-size: unquote($feature-background-size);
+    	background-attachment: unquote($feature-background-attachment);
+	}
+	color: $feature-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $feature-heading-color;
+	}
+}
+
+@media print {
+	#g-feature {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

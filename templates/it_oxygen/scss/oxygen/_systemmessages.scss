@@ -1,0 +1,39 @@
+#g-system-messages {
+	background-color: $systemmessages-background-color;
+	@if $systemmessages-background-image {
+    	background-image: url($systemmessages-background-image);
+    	background-repeat: unquote($systemmessages-background-repeat);
+    	background-size: unquote($systemmessages-background-size);
+    	background-attachment: unquote($systemmessages-background-attachment);
+	}
+	color: $systemmessages-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $systemmessages-heading-color;
+	}
+}
+
+@media print {
+	#g-system-messages {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}
+
+#system-message-container {
+	#system-message {
+		padding: 0;
+		.alert {
+			padding: 25px;
+			margin: ($section-padding + $content-padding + $content-margin) ($content-padding + $content-margin) 0 ($content-padding + $content-margin);
+			.close {
+				position: static;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			p {
+				margin: 15px 0 0 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+#g-maintop {
+	padding: $section-padding 0;
+	background-color: $maintop-background-color;
+	@if $maintop-background-image {
+    	background-image: url($maintop-background-image);
+    	background-repeat: unquote($maintop-background-repeat);
+    	background-size: unquote($maintop-background-size);
+    	background-attachment: unquote($maintop-background-attachment);
+	}
+	color: $maintop-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $maintop-heading-color;
+	}
+}
+
+@media print {
+	#g-maintop {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

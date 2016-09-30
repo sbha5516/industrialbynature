@@ -1,0 +1,34 @@
+#g-footer {
+	padding: $section-padding 0;
+	background-color: $footer-background-color;
+	@if $footer-background-image {
+    	background-image: url($footer-background-image);
+    	background-repeat: unquote($footer-background-repeat);
+    	background-size: unquote($footer-background-size);
+    	background-attachment: unquote($footer-background-attachment);
+	}
+	color: $footer-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $footer-heading-color;
+	}
+	a {
+		color: lighten($footer-text-color, 20%);
+		&:hover {
+			color: $accent-color-1;
+		}
+	}
+	.g-title {
+		span {
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+}
+
+@media print {
+	#g-footer {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

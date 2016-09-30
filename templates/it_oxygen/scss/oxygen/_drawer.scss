@@ -1,0 +1,21 @@
+#g-drawer {
+	padding: $section-padding 0;
+	background-color: $drawer-background-color;
+	@if $drawer-background-image {
+    	background-image: url($drawer-background-image);
+    	background-repeat: unquote($drawer-background-repeat);
+    	background-size: unquote($drawer-background-size);
+    	background-attachment: unquote($drawer-background-attachment);
+	}
+	color: $drawer-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $drawer-heading-color;
+	}
+}
+
+@media print {
+	#g-drawer {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

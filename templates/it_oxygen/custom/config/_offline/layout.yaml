@@ -1,0 +1,54 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/offline.png'
+  name: _offline
+  timestamp: 1446482360
+layout:
+  /header/:
+    -
+      - logo-3431
+  /main/:
+    -
+      - system-messages-1507
+    -
+      - system-content-7923
+  /footer/:
+    -
+      - position-footer
+  /copyright/:
+    -
+      - 'position-copyright-a 25'
+      - 'position-copyright-b 25'
+      - 'position-copyright-c 25'
+      - 'position-copyright-d 25'
+  offcanvas: {  }
+structure:
+  header:
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  position-footer:
+    attributes:
+      key: footer
+  position-copyright-a:
+    attributes:
+      key: copyright-a
+  position-copyright-b:
+    attributes:
+      key: copyright-b
+  position-copyright-c:
+    attributes:
+      key: copyright-c
+  position-copyright-d:
+    attributes:
+      key: copyright-d

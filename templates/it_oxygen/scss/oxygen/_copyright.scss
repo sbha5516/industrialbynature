@@ -1,0 +1,43 @@
+#g-copyright {
+	padding: 10px 0;
+	border-top: 1px solid lighten($copyright-background-color, 5%);
+	background-color: $copyright-background-color;
+	@if $copyright-background-image {
+    	background-image: url($copyright-background-image);
+    	background-repeat: unquote($copyright-background-repeat);
+    	background-size: unquote($copyright-background-size);
+    	background-attachment: unquote($copyright-background-attachment);
+	}
+	color: $copyright-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $copyright-heading-color;
+	}
+	a {
+		color: lighten($copyright-text-color, 20%);
+		&:hover {
+			color: $accent-color-1;
+		}
+	}
+	.g-block {
+		&:last-child {
+			text-align: right;
+			@include breakpoint(mobile-only) {
+				text-align: center;
+				.g-content {
+					margin-top: 0;
+					padding-top: 0;
+				}
+			}
+		}
+	}
+	@include breakpoint(mobile-only) {
+		text-align: center;
+	}
+}
+
+@media print {
+	#g-copyright {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

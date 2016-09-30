@@ -1,0 +1,16 @@
+.offcanvas-toggle-particle {
+    &.g-offcanvas-toggle {
+    	display: block;
+    	position: relative;
+    	top: auto;
+    	left: auto;
+        right: auto;
+    	color: inherit;
+    	font-size: inherit;
+        line-height: inherit;
+    	@include transition(color 0.2s);   	
+	}
+    i {
+        opacity: 1 !important;
+    }
+}  

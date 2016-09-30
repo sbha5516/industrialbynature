@@ -1,0 +1,21 @@
+#g-subfeature {
+	padding: $section-padding 0;
+	background-color: $subfeature-background-color;
+	@if $subfeature-background-image {
+    	background-image: url($subfeature-background-image);
+    	background-repeat: unquote($subfeature-background-repeat);
+    	background-size: unquote($subfeature-background-size);
+    	background-attachment: unquote($subfeature-background-attachment);
+	}
+	color: $subfeature-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $subfeature-heading-color;
+	}
+}
+
+@media print {
+	#g-subfeature {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

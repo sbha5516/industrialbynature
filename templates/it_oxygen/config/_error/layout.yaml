@@ -1,0 +1,526 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/error.png'
+  name: _error
+  timestamp: 1446482325
+layout:
+  /drawer/:
+    -
+      - position-drawer
+  /top/:
+    -
+      - 'position-top-a 20'
+      - 'position-top-b 30'
+      - 'position-top-c 25'
+      - 'position-top-d 25'
+  /header/:
+    -
+      - 'logo-1255 25'
+      - 'menu-5272 75'
+  /navigation/:
+    -
+      - 'position-navigation-a 25'
+      - 'position-navigation-b 25'
+      - 'position-navigation-c 25'
+      - 'position-navigation-d 25'
+  /breadcrumb/:
+    -
+      - 'position-breadcrumb-a 15'
+      - 'position-breadcrumb-b 35'
+      - 'position-breadcrumb-c 25'
+      - 'position-breadcrumb-d 25'
+  /fullwidth/:
+    -
+      - position-fullwidth
+  /showcase/:
+    -
+      - 'position-showcase-a 25'
+      - 'position-showcase-b 25'
+      - 'position-showcase-c 25'
+      - 'position-showcase-d 25'
+  /intro/:
+    -
+      - 'position-intro-a 25'
+      - 'position-intro-b 25'
+      - 'position-intro-c 25'
+      - 'position-intro-d 25'
+  /feature/:
+    -
+      - 'position-feature-a 25'
+      - 'position-feature-b 25'
+      - 'position-feature-c 25'
+      - 'position-feature-d 25'
+  /subfeature/:
+    -
+      - 'position-subfeature-a 25'
+      - 'position-subfeature-b 25'
+      - 'position-subfeature-c 25'
+      - 'position-subfeature-d 25'
+  /utility/:
+    -
+      - 'position-utility-a 25'
+      - 'position-utility-b 25'
+      - 'position-utility-c 25'
+      - 'position-utility-d 25'
+  /maintop/:
+    -
+      - 'position-maintop-a 25'
+      - 'position-maintop-b 25'
+      - 'position-maintop-c 25'
+      - 'position-maintop-d 25'
+  /system-messages/:
+    -
+      - system-messages-5400
+  /container-main/:
+    -
+      -
+        'sidebar 30':
+          -
+            - position-sidebar-left
+      -
+        'mainbody 40':
+          -
+            - 'position-content-top-a 50'
+            - 'position-content-top-b 50'
+          -
+            - system-content-9936
+          -
+            - 'position-content-bottom-a 50'
+            - 'position-content-bottom-b 50'
+      -
+        'aside 30':
+          -
+            - position-sidebar-right
+  /mainbottom/:
+    -
+      - 'position-mainbottom-a 25'
+      - 'position-mainbottom-b 25'
+      - 'position-mainbottom-c 25'
+      - 'position-mainbottom-d 25'
+  /extension/:
+    -
+      - 'position-extension-a 25'
+      - 'position-extension-b 25'
+      - 'position-extension-c 25'
+      - 'position-extension-d 25'
+  /additional/:
+    -
+      - 'position-additional-a 25'
+      - 'position-additional-b 25'
+      - 'position-additional-c 25'
+      - 'position-additional-d 25'
+  /prebottom/:
+    -
+      - 'position-prebottom-a 25'
+      - 'position-prebottom-b 25'
+      - 'position-prebottom-c 25'
+      - 'position-prebottom-d 25'
+  /bottom/:
+    -
+      - 'position-bottom-a 25'
+      - 'position-bottom-b 25'
+      - 'position-bottom-c 25'
+      - 'position-bottom-d 25'
+  /afterbottom/:
+    -
+      - 'position-afterbottom-a 25'
+      - 'position-afterbottom-b 25'
+      - 'position-afterbottom-c 25'
+      - 'position-afterbottom-d 25'
+  /last/:
+    -
+      - 'position-last-a 25'
+      - 'position-last-b 25'
+      - 'position-last-c 25'
+      - 'position-last-d 25'
+  /footer/:
+    -
+      - 'position-footer-a 25'
+      - 'position-footer-b 25'
+      - 'position-footer-c 25'
+      - 'position-footer-d 25'
+  /copyright/:
+    -
+      - 'position-copyright-a 25'
+      - 'position-copyright-b 25'
+      - 'position-copyright-c 25'
+      - 'position-copyright-d 25'
+  /to-top/:
+    -
+      - totop-1989
+  offcanvas:
+    -
+      - mobile-menu-2539
+    -
+      - position-offcanvas-a
+    -
+      - position-offcanvas-b
+structure:
+  drawer:
+    type: section
+    attributes:
+      boxed: ''
+  top:
+    type: section
+    attributes:
+      boxed: ''
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      extra:
+        -
+          data-uk-sticky: '{media:768}'
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  breadcrumb:
+    type: section
+    attributes:
+      boxed: ''
+  fullwidth:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+  maintop:
+    type: section
+    attributes:
+      boxed: ''
+  system-messages:
+    type: section
+    attributes:
+      boxed: ''
+  sidebar:
+    type: section
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbody:
+    type: section
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: ''
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+  additional:
+    type: section
+    attributes:
+      boxed: ''
+  prebottom:
+    type: section
+    attributes:
+      boxed: ''
+  bottom:
+    type: section
+    attributes:
+      boxed: ''
+  afterbottom:
+    type: section
+    attributes:
+      boxed: ''
+  last:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+  to-top:
+    type: section
+    attributes:
+      boxed: ''
+  offcanvas:
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '0'
+content:
+  position-drawer:
+    attributes:
+      key: drawer
+  position-top-a:
+    attributes:
+      key: top-a
+  position-top-b:
+    attributes:
+      key: top-b
+    block:
+      class: hidden-phone
+  position-top-c:
+    attributes:
+      key: top-c
+  position-top-d:
+    attributes:
+      key: top-d
+  menu-5272:
+    attributes:
+      mobileTarget: '1'
+  position-navigation-a:
+    attributes:
+      key: navigation-a
+  position-navigation-b:
+    attributes:
+      key: navigation-b
+  position-navigation-c:
+    attributes:
+      key: navigation-c
+  position-navigation-d:
+    attributes:
+      key: navigation-d
+  position-breadcrumb-a:
+    attributes:
+      key: breadcrumb-a
+  position-breadcrumb-b:
+    attributes:
+      key: breadcrumb-b
+  position-breadcrumb-c:
+    attributes:
+      key: breadcrumb-c
+  position-breadcrumb-d:
+    attributes:
+      key: breadcrumb-d
+  position-fullwidth:
+    attributes:
+      key: fullwidth
+  position-showcase-a:
+    attributes:
+      key: showcase-a
+  position-showcase-b:
+    attributes:
+      key: showcase-b
+  position-showcase-c:
+    attributes:
+      key: showcase-c
+  position-showcase-d:
+    attributes:
+      key: showcase-d
+  position-intro-a:
+    attributes:
+      key: intro-a
+  position-intro-b:
+    attributes:
+      key: intro-b
+  position-intro-c:
+    attributes:
+      key: intro-c
+  position-intro-d:
+    attributes:
+      key: intro-d
+  position-feature-a:
+    attributes:
+      key: feature-a
+  position-feature-b:
+    attributes:
+      key: feature-b
+  position-feature-c:
+    attributes:
+      key: feature-c
+  position-feature-d:
+    attributes:
+      key: feature-d
+  position-subfeature-a:
+    attributes:
+      key: subfeature-a
+  position-subfeature-b:
+    attributes:
+      key: subfeature-b
+  position-subfeature-c:
+    attributes:
+      key: subfeature-c
+  position-subfeature-d:
+    attributes:
+      key: subfeature-d
+  position-utility-a:
+    attributes:
+      key: utility-a
+  position-utility-b:
+    attributes:
+      key: utility-b
+  position-utility-c:
+    attributes:
+      key: utility-c
+  position-utility-d:
+    attributes:
+      key: utility-d
+  position-maintop-a:
+    attributes:
+      key: maintop-a
+  position-maintop-b:
+    attributes:
+      key: maintop-b
+  position-maintop-c:
+    attributes:
+      key: maintop-c
+  position-maintop-d:
+    attributes:
+      key: maintop-d
+  position-sidebar-left:
+    attributes:
+      key: sidebar-left
+  position-content-top-a:
+    attributes:
+      key: content-top-a
+  position-content-top-b:
+    attributes:
+      key: content-top-b
+  position-content-bottom-a:
+    attributes:
+      key: content-bottom-a
+  position-content-bottom-b:
+    attributes:
+      key: content-bottom-b
+  position-sidebar-right:
+    attributes:
+      key: sidebar-right
+  position-mainbottom-a:
+    attributes:
+      key: mainbottom-a
+  position-mainbottom-b:
+    attributes:
+      key: mainbottom-b
+  position-mainbottom-c:
+    attributes:
+      key: mainbottom-c
+  position-mainbottom-d:
+    attributes:
+      key: mainbottom-d
+  position-extension-a:
+    attributes:
+      key: extension-a
+  position-extension-b:
+    attributes:
+      key: extension-b
+  position-extension-c:
+    attributes:
+      key: extension-c
+  position-extension-d:
+    attributes:
+      key: extension-d
+  position-additional-a:
+    attributes:
+      key: additional-a
+  position-additional-b:
+    attributes:
+      key: additional-b
+  position-additional-c:
+    attributes:
+      key: additional-c
+  position-additional-d:
+    attributes:
+      key: additional-d
+  position-prebottom-a:
+    attributes:
+      key: prebottom-a
+  position-prebottom-b:
+    attributes:
+      key: prebottom-b
+  position-prebottom-c:
+    attributes:
+      key: prebottom-c
+  position-prebottom-d:
+    attributes:
+      key: prebottom-d
+  position-bottom-a:
+    attributes:
+      key: bottom-a
+  position-bottom-b:
+    attributes:
+      key: bottom-b
+  position-bottom-c:
+    attributes:
+      key: bottom-c
+  position-bottom-d:
+    attributes:
+      key: bottom-d
+  position-afterbottom-a:
+    attributes:
+      key: afterbottom-a
+  position-afterbottom-b:
+    attributes:
+      key: afterbottom-b
+  position-afterbottom-c:
+    attributes:
+      key: afterbottom-c
+  position-afterbottom-d:
+    attributes:
+      key: afterbottom-d
+  position-last-a:
+    attributes:
+      key: last-a
+  position-last-b:
+    attributes:
+      key: last-b
+  position-last-c:
+    attributes:
+      key: last-c
+  position-last-d:
+    attributes:
+      key: last-d
+  position-footer-a:
+    attributes:
+      key: footer-a
+  position-footer-b:
+    attributes:
+      key: footer-b
+  position-footer-c:
+    attributes:
+      key: footer-c
+  position-footer-d:
+    attributes:
+      key: footer-d
+  position-copyright-a:
+    attributes:
+      key: copyright-a
+  position-copyright-b:
+    attributes:
+      key: copyright-b
+  position-copyright-c:
+    attributes:
+      key: copyright-c
+  position-copyright-d:
+    attributes:
+      key: copyright-d
+  position-offcanvas-a:
+    attributes:
+      key: offcanvas-a
+  position-offcanvas-b:
+    attributes:
+      key: offcanvas-b

@@ -1,0 +1,125 @@
+// Bootstrap Buttons
+#g-page-surround, #g-offcanvas {
+	.btn {
+		display: inline-block;
+		padding: 0.5rem 1rem;
+		border-radius: $core-border-radius;
+		color: $base-text-color;
+		background: transparent;
+		border: 1px solid lighten($base-text-color,15%);
+		line-height: $core-line-height;
+		font-size: $fontsizes-body-font-size;
+		vertical-align: middle;
+		text-shadow: none;
+		box-shadow: none;
+		text-align: center;
+		@include transition(all 0.2s);
+		&:hover {
+			background: $base-text-color;
+			color: $white;
+			border-color: $base-text-color;
+		}
+		&:active, &:focus {
+			background: $base-text-color;
+			color: $white;
+		}
+		&.btn-primary {
+			color: $white;
+			background: $accent-color-1;
+			border: none;
+			&:hover, &:active, &:focus {
+				background: $base-title-color;
+				color: $white;
+			}
+		}
+		&.btn-info {
+			color: $white;
+			background: #5bc0de;
+			border-color: #5bc0de;
+			&:hover, &:active, &:focus {
+				background: lighten(#5bc0de,10%);
+				border-color: lighten(#5bc0de,10%);
+			}
+		}
+		&.btn-success {
+			color: $white;
+			background: #2ecc71;
+			border-color: #2ecc71;
+			&:hover, &:active, &:focus {
+				background: lighten(#2ecc71,10%);
+				border-color: lighten(#2ecc71,10%);
+			}
+		}
+		&.btn-warning {
+			color: $white;
+			background: #f39c12;
+			border-color: #f39c12;
+			&:hover, &:active, &:focus {
+				background: lighten(#f39c12,10%);
+				border-color: lighten(#f39c12,10%);
+			}
+		}
+		&.btn-danger {
+			color: $white;
+			background: #c0392b;
+			border-color: #c0392b;
+			&:hover, &:active, &:focus {
+				background: lighten(#c0392b,10%);
+				border-color: lighten(#c0392b,10%);
+			}
+		}
+		&.btn-inverse {
+			color: $white;
+			background: #2c3e50;
+			border-color: #2c3e50;
+			&:hover, &:active, &:focus {
+				background: lighten(#2c3e50,10%);
+				border-color: lighten(#2c3e50,10%);
+			}
+		}
+		&.btn-link {
+			color: $accent-color-1;
+			background: transparent;
+			border: none;
+			padding: initial;
+			&:hover, &:active, &:focus {
+				color: darken($accent-color-1, 15%);
+			}
+		}
+		&.btn-large {
+			font-size: $fontsizes-body-font-size*1.25;
+			padding: 0.8rem 1.3rem;
+
+		}
+	}
+	.btn-group {
+		> .btn {
+			border-radius: 0;
+		}
+		> .btn:first-child {
+			@include border-left-radius($core-border-radius);
+		}
+		> .btn:last-child {
+			@include border-right-radius($core-border-radius);
+		}
+	}
+
+	// Joomla Read More Button and Search Page Button
+	.readmore, .search-form-results {
+		.btn {
+			background: $accent-color-1;
+			color: $white;
+			border: none;
+			@include transition(background 0.2s);
+			&:hover, &:active, &:focus {
+				background: #2e373c;
+				color: $white;
+			}
+		}
+	}
+	.search-form-results {
+		.btn {
+			line-height: 1.5;
+		}
+	}
+}

@@ -1,0 +1,73 @@
+#g-subfeature {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+
+  .g-content {
+    margin: 0;
+    padding: 0;
+
+  }
+  .g-particle-intro {
+    margin: 0;
+    text-align: left;
+
+    .g-main-title {
+      border-left: 5px solid $secondary-color;
+      color: #333;
+      font-family: 'Patua One';
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 30px;
+      margin: 50px 0 40px 0;
+      padding: 5px 10px;
+
+    }
+
+    .g-title-separator.no-intro-text {
+      @extend %sr-only;
+    }
+
+  }
+}
+
+.g-our-team {
+  margin: 0;
+
+  h4,
+  a {
+    font-family: "roboto";
+  }
+
+  .g-our-team-item {
+    border: 0 solid transparent;
+  }
+
+  @at-root
+  .g-our-team-desc {
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  @at-root
+  .g-our-team-name {
+    line-height: 30px;
+    color: $primary-color !important;
+    font-size: 28px !important;
+    font-weight: 700;
+  }
+
+  @at-root
+  .g-info-container {
+    line-height: 30px;
+    text-align: left;
+  }
+
+  @at-root
+  .g-our-team-position.g-desc-enabled {
+    color: #ababab;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

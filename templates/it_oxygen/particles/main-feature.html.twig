@@ -1,0 +1,61 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set attr_extra = '' %}
+{% if particle.extra %}
+    {% for attributes in particle.extra %}
+        {% for key, value in attributes %}
+            {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% set attr_extra_left = '' %}
+{% if particle.extra_left %}
+    {% for attributes in particle.extra_left %}
+        {% for key, value in attributes %}
+            {% set attr_extra_left = attr_extra_left ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% set attr_extra_right = '' %}
+{% if particle.extra_right %}
+    {% for attributes in particle.extra_right %}
+        {% for key, value in attributes %}
+            {% set attr_extra_right = attr_extra_right ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% set textcontent %}
+    {% if particle.title %}<h3 class="g-main-feature-title">{{ particle.title|raw }}</h3>{% endif %}
+    {% if particle.description %}<p class="g-main-feature-desc">{{ particle.description|raw }}</p>{% endif %}
+    {% if particle.link %}<a class="button g-main-feature-link" href="{{ particle.link|e }}" target="{{ particle.target|default('_blank')|e }}">{% if particle.buttonicon %}<i class="{{ particle.buttonicon|e }}"></i>{% endif %}{{ particle.buttontext|raw }}</a>{% endif %}
+{% endset %}
+
+{% set imagecontent %}
+    {% if particle.image %}<a data-lightbox-type="image" href="{{ url(particle.image) }}" data-uk-lightbox class="main-feature--image ">
+        <span class="lightbox"></span>
+        <img class="g-main-feature-image{% if particle.imagebottom|default('yes')|e == 'yes' %} image-bottom{% endif %}" alt="{{ particle.alt|e }}" src="{{ url(particle.image) }}" {{ particle.image|imagesize|raw }}>{% endif %}
+        </a>
+{% endset %}
+
+{% block particle %}
+
+    <div class="g-main-feature{% if particle.css.class %} {{ particle.css.class|e }}{% endif %}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %}>
+        <div class="g-grid">
+            <div class="g-block g-main-feature-left{% if particle.css.left %} {{ particle.css.left|e }}{% endif %}{% if particle.layout|default('right')|e == 'left' %} image-block{% endif %}" {% if particle.extra_left %}{{ attr_extra_left|raw }}{% endif %}>
+                <div class="g-content">
+                    {% if particle.layout|default('right')|e == 'right' %}{{ textcontent }}{% endif %}
+                    {% if particle.layout|default('right')|e == 'left' %}{{ imagecontent }}{% endif %}
+                </div>
+            </div>
+            <div class="g-block g-main-feature-right{% if particle.css.right %} {{ particle.css.right|e }}{% endif %}{% if particle.layout|default('right')|e == 'right' %} align-right image-block{% endif %}" {% if particle.extra_right %}{{ attr_extra_right|raw }}{% endif %}>
+                <div class="g-content">
+                    {% if particle.layout|default('right')|e == 'right' %}{{ imagecontent }}{% endif %}
+                    {% if particle.layout|default('right')|e == 'left' %}{{ textcontent }}{% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

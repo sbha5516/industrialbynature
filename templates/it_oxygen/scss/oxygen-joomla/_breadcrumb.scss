@@ -1,0 +1,47 @@
+ul.breadcrumb {
+	margin: 6px 0 0;
+	padding: 0;
+	background: none;
+	@include breakpoint(mobile-only) {
+		margin: 0;
+	}
+	li {
+		text-shadow: none;
+		.divider {
+			display: none;
+		}
+		+ li {
+			&:after {
+				content: "/ ";
+				padding: 0 5px;
+			}
+			&:last-child {
+				&:after {
+					content: none;
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+.g-grid {
+	> .g-block {
+		&:last-child {
+			ul.breadcrumb {
+				text-align: right;
+				@include breakpoint(mobile-only) {
+					text-align: center;
+				}
+			}
+		}
+		&:first-child {
+			ul.breadcrumb {
+				text-align: left;
+				@include breakpoint(mobile-only) {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

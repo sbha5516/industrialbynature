@@ -1,0 +1,29 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+{% assets in 'footer' with { priority: 10 } %}
+	<script type="text/javascript">
+		(function($) {
+			$(document).ready(function() {
+				$(window).scroll(function() {
+					if ($(document).scrollTop() < {{ particle.offset|default(500)|e }} || $(window).width() < 767) {
+				        $('#g-totop-button').removeClass('totopfixed');
+
+				    } else {
+				        $('#g-totop-button').addClass('totopfixed');
+
+				    }
+				});
+			});
+		})(jQuery);
+	</script>
+{% endassets -%}
+<div class="{{ particle.css.class|e }} g-particle">
+    <div class="g-totop {{ particle.style|default("style1")|e }}">
+        <a href="#" id="g-totop-button" rel="nofollow" data-uk-smooth-scroll>
+            {% if particle.icon|default('fa fa-angle-up') %}<i class="{{particle.icon|default('fa fa-angle-up')|e}}"></i>{% endif %}
+            {% if particle.content %}{{particle.content|raw}}{% endif %}
+        </a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,221 @@
+.nssp2 {
+	.ns2-title {
+		margin: 0 0 10px;
+		font-size: $fontsizes-body-font-size*1.15;
+		font-weight: normal;
+		a {
+			color: $base-title-color;
+			&:hover {
+				color: $accent-color-1;
+			}
+		}
+	}
+	.ns2-introtext {
+		margin: 0;
+	}
+	.ns2-social {
+		span {
+			margin-left: 0 !important;
+			margin-right: 10px;
+		}
+	}
+	.ns2-rating {
+		margin-bottom: 10px;
+	}
+	.ns2-links {
+		margin-top: 10px;
+		font-size: $fontsizes-body-font-size*0.9;
+		.ns2-created {
+			margin-right: 15px;
+			&:before {
+				content: "\f017";
+				font-family: FontAwesome;
+				margin-right: 2px;
+			}
+		}
+		.ns2-author {
+			margin-right: 15px;
+			&:before {
+				content: "\f007";
+				font-family: FontAwesome;
+				margin-right: 2px;
+			}
+		}
+		.ns2-category {
+			margin-right: 15px;
+			a {
+				color: $base-text-color;
+				&:before {
+					content: "\f07c";
+					font-family: FontAwesome;
+					margin-right: 2px;
+				}
+				&:hover {
+					color: $accent-color-1;
+				}
+			}
+		}
+		.ns2-comments {
+			margin: 0;
+			margin-right: 15px;
+			color: $base-text-color;
+			background: none;
+			padding: 0;
+			font-size: inherit;
+			&:before {
+				content: "\f086";
+				font-family: FontAwesome;
+				margin-right: 6px;
+			}
+			&:hover {
+				color: $accent-color-1;
+			}
+		}
+		.ns2-hits {
+			margin-right: 15px;
+			background: none;
+			padding: 0;
+			color: $base-text-color;
+			font-size: inherit;
+			&:before {
+				content: "\f06e";
+				font-family: FontAwesome;
+				margin-right: 6px;
+			}
+		}
+		.ns2-readmore {
+			margin: 0;
+			margin-right: 15px;
+			color: $base-text-color;
+			span {
+				background: none;
+				padding: 0;
+				font-size: inherit;
+			}
+			&:before {
+				content: "\f0c1";
+				font-family: FontAwesome;
+				margin-right: 6px;
+			}
+			&:hover {
+				color: $accent-color-1;
+			}
+		}
+	}
+	.ns2-page-inner-custom {
+		overflow: hidden;
+		> div {
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.ns2-image-link {
+		position: relative;
+		&:hover {
+			.ns2-image-overlay {
+				opacity: 1;
+			}
+		}
+		@include breakpoint(small-mobile-range) {
+			margin-bottom: 15px;
+		}
+	}
+	.ns2-image-overlay {
+		background: rgba(0, 0, 0, 0.5);
+		color: #ffffff;
+		padding: 20px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		@include transition(opacity 0.3s);
+		&:before {
+			font-size: 25px;
+			height: 25px;
+			width: 25px;
+			margin-left: -11px;
+			margin-top: -17px;
+			color: #ffffff;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			content: "\f0c1";
+			font-family: FontAwesome;
+		}
+	}
+	// Pagination and arrows
+	.ns2-wrap {
+		position: relative;
+		.ns2-art-controllers {
+			position: absolute;
+			top: -58px;
+			right: 0;
+			.ns2-art-prev, .ns2-links-prev, .ns2-art-play, .ns2-links-play, .ns2-art-pause, .ns2-links-pause, .ns2-art-next, .ns2-links-next, .ns2-art-pagination span, .ns2-links-pagination span {
+				background: none;
+				text-indent: 0;
+				height: auto;
+				width: auto;
+			}
+			.ns2-art-pagination, .ns2-links-pagination {
+				span {
+					color: $base-text-color;
+					@include transition(color 0.2s);
+					&:hover, &.active {
+						color: lighten($base-text-color, 20%);
+					}
+				}
+			}
+			.ns2-art-prev, .ns2-links-prev, .ns2-art-next, .ns2-links-next {
+				padding: 5px 10px;
+				background: $accent-color-1;
+				color: #ffffff;
+				border-radius: 3px;
+				font-size: 11px;
+				margin-top: -4px;
+				margin-right: 0;
+				margin-left: 5px;
+				@include transition(all 0.2s);
+				i {
+					vertical-align: middle;
+				}
+				&:hover {
+					background: $base-title-color;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	.nssp2 {
+		.ns2-title {
+			font-size: $fontsizes-body-font-size;
+			margin: 0;
+		}
+	}
+	.ns2-page-inner-custom {
+		> div {
+			margin: 0;
+			border-bottom: 1px solid lighten($footer-background-color, 5%);
+			&:last-child {
+				border: none;
+				.ns2-column {
+					> div {
+						padding-bottom: 0 !important;
+					}
+				}
+			}
+		}
+		.ns2-first {
+			.ns2-column {
+				> div {
+					padding-top: 0 !important;
+				}
+			}
+		}
+	}
+}

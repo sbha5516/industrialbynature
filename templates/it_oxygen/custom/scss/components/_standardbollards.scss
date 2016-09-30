@@ -1,0 +1,53 @@
+.standardbollards {
+  display: inline-block;
+  width: 100%;
+
+  .g-grid {
+    display: inline-block;
+    width: 100%;
+  }
+
+  &--left {
+    float: left;
+    margin-left: 10px;
+    width: 35%;
+
+    .g-main-feature-title {
+      border-left: 5px solid $secondary-color;
+      color: $primary-color !important;
+      font-family: 'Patua One';
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-top: 40px;
+      padding: 5px 10px;
+    }
+
+    p {
+      color: $secondary-color;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+    }
+
+    span {
+      color: $primary-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+  }
+
+  &--right {
+    float: right;
+    text-align: left !important;
+    width: 55%;
+
+    img {
+      margin-top: 115px;
+      max-height:420px;
+      width: auto;
+    }
+  }
+}

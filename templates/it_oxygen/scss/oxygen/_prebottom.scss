@@ -1,0 +1,21 @@
+#g-prebottom {
+	padding: $section-padding 0;
+	background-color: $prebottom-background-color;
+	@if $prebottom-background-image {
+    	background-image: url($prebottom-background-image);
+    	background-repeat: unquote($prebottom-background-repeat);
+    	background-size: unquote($prebottom-background-size);
+    	background-attachment: unquote($prebottom-background-attachment);
+	}
+	color: $prebottom-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $prebottom-heading-color;
+	}
+}
+
+@media print {
+	#g-prebottom {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

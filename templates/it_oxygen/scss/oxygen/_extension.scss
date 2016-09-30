@@ -1,0 +1,21 @@
+#g-extension {
+	padding: $section-padding 0;
+	background-color: $extension-background-color;
+	@if $extension-background-image {
+    	background-image: url($extension-background-image);
+    	background-repeat: unquote($extension-background-repeat);
+    	background-size: unquote($extension-background-size);
+    	background-attachment: unquote($extension-background-attachment);
+	}
+	color: $extension-text-color;
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $extension-heading-color;
+	}
+}
+
+@media print {
+	#g-extension {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

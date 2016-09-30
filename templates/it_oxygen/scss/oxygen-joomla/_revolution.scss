@@ -1,0 +1,50 @@
+.rev_slider_wrapper {
+    .tp-caption {
+    	a {
+    		&.button {
+    			color: #ffffff;
+    			&.dark {
+    				margin-left: 10px;
+    			}
+    		}
+    	}
+    }
+
+    .tparrows:before {
+        color: #FFFFFF;
+        display: inline-block;
+        font-family: FontAwesome,sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: bold;
+        margin-right: 0;
+        margin-top: 2px;
+        text-align: center;
+        text-decoration: inherit;
+        width: 35px;
+    }
+    .tparrows {
+    	background: #000000;
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        @include transition (background 0.3s, opacity 0.3s);
+    }
+    .tparrows:hover {
+        color: #FFFFFF;
+    }
+    .tp-leftarrow:before {
+        content: "\f104";
+    }
+    .tp-rightarrow:before {
+        content: "\f105";
+    }
+    .tparrows.tp-rightarrow:before {
+        margin-left: 1px;
+    }
+    .tparrows:hover {
+        background: #000000;
+    }
+}
