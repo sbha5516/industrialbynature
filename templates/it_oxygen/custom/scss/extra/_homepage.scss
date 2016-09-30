@@ -140,7 +140,7 @@
     padding-bottom: 22%;
   }
   .area_block.hori1 {
-    background: url(../images/objectbgtab.jpg) no-repeat !important;
+    background: url(images/home/second.jpg) no-repeat !important;
     background-attachment: fixed !important;
     background-position: 0 4px !important;
     background-size: 120% 151% !important;
@@ -161,10 +161,15 @@
     background-size: 120% 78%;
   }
   .area_block.hori1 {
-    background: url(../images/objectbgtab.jpg) no-repeat !important;
-    background-attachment: fixed !important;
-    background-position: 0 94px !important;
-    background-size: 110% 110% !important;
+    background: url(images/home/second.jpg) no-repeat !important;
+    background-attachment: inherit !important;
+    background-position: 0 0 !important;
+    background-size: cover !important;
+    height:  400px;
+
+    .container {
+      margin-top: 100px;
+    }
   }
 
 }
@@ -195,5 +200,9 @@
 @media only screen and (max-width: 400px) {
 
 }
-
+@media only screen and (max-width: 768px) {
+  .custom.area_block.hori1 {
+    height: 494px !important;
+  }
+}
 /*!dev*/

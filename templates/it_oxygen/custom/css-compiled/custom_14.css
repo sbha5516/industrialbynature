@@ -194,105 +194,111 @@ body #g-to-top .style1 #g-totop-button:hover, body #g-to-top .style1 #g-totop-bu
 /* line 2, templates/it_oxygen/custom/scss/components/_menu.scss */
 /* line 3, templates/it_oxygen/custom/scss/components/_menu.scss */
 /* line 4, templates/it_oxygen/custom/scss/components/_menu.scss */
-/* line 10, templates/it_oxygen/custom/scss/components/_menu.scss */
+.g-block.size-45 .g-main-nav .g-toplevel:first-child > li:nth-child(1) {
+  display: none;
+}
+/* line 11, templates/it_oxygen/custom/scss/components/_menu.scss */
 .g-block.size-45 .g-menu-item-title {
   color: #333;
   font-size: 20px;
   font-weight: 400;
 }
-/* line 15, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 16, templates/it_oxygen/custom/scss/components/_menu.scss */
 .g-block.size-45 .g-menu-item-title:hover, .g-block.size-45 .g-menu-item-title:focus, .g-block.size-45 .g-menu-item-title.active {
   color: #8bc53f;
 }
-/* line 23, templates/it_oxygen/custom/scss/components/_menu.scss */
 /* line 24, templates/it_oxygen/custom/scss/components/_menu.scss */
 /* line 25, templates/it_oxygen/custom/scss/components/_menu.scss */
 /* line 26, templates/it_oxygen/custom/scss/components/_menu.scss */
-/* line 33, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 27, templates/it_oxygen/custom/scss/components/_menu.scss */
+.g-block.size-40 .g-main-nav .g-toplevel:first-child > li:nth-child(1), .g-block.size-40 .g-main-nav .g-toplevel:first-child > li:nth-child(2), .g-block.size-40 .g-main-nav .g-toplevel:first-child > li:nth-child(3) {
+  display: none;
+}
+/* line 35, templates/it_oxygen/custom/scss/components/_menu.scss */
 .g-block.size-40 .g-main-nav .g-toplevel {
   text-align: left;
 }
-/* line 36, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 38, templates/it_oxygen/custom/scss/components/_menu.scss */
 .g-block.size-40 .g-main-nav .g-toplevel .g-menu-item {
   border-left: 1px solid #c0c0c0;
   margin: 0 -2px 0 0 !important;
 }
-/* line 40, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 42, templates/it_oxygen/custom/scss/components/_menu.scss */
 .g-block.size-40 .g-main-nav .g-toplevel .g-menu-item .g-menu-item-container {
   height: 86px;
   line-height: 86px;
   padding: 0 0 0 15px !important;
   text-align: center;
 }
-/* line 48, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 50, templates/it_oxygen/custom/scss/components/_menu.scss */
 .g-block.size-40 .g-main-nav .g-toplevel .g-menu-item .g-menu-item-title {
   color: #787878;
   font-size: 20px;
   margin-left: 30px;
   margin-right: 20px;
 }
-/* line 56, templates/it_oxygen/custom/scss/components/_menu.scss */
 /* line 58, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 60, templates/it_oxygen/custom/scss/components/_menu.scss */
 .g-block.size-40 .g-main-nav .g-toplevel .g-menu-item:hover .g-menu-item-title, .g-block.size-40 .g-main-nav .g-toplevel .g-menu-item:focus .g-menu-item-title {
   color: #8bc53f;
 }
-/* line 64, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 66, templates/it_oxygen/custom/scss/components/_menu.scss */
 .g-block.size-40 .g-main-nav .g-toplevel li:last-child {
   border-right: 1px solid #c0c0c0;
 }
-/* line 71, templates/it_oxygen/custom/scss/components/_menu.scss */
-/* line 72, templates/it_oxygen/custom/scss/components/_menu.scss */
 /* line 73, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 74, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 75, templates/it_oxygen/custom/scss/components/_menu.scss */
 .menu--primary__bike {
   background: url('../../images/web/header/iconbike.png') no-repeat 15px center;
   color: #787878;
 }
-/* line 76, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 78, templates/it_oxygen/custom/scss/components/_menu.scss */
 .menu--primary__bike:hover, .menu--primary__bike:focus {
   background: url('../../images/web/header/iconbikehover.png') no-repeat 15px center;
   box-shadow: inset 0 -5px 0 0 #8bc53f;
   color: #8bc53f;
 }
-/* line 84, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 86, templates/it_oxygen/custom/scss/components/_menu.scss */
 .menu--primary__urban {
   background: url('../../images/web/header/iconurban.png') no-repeat 15px center;
   color: #787878;
 }
-/* line 87, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 89, templates/it_oxygen/custom/scss/components/_menu.scss */
 .menu--primary__urban:hover, .menu--primary__urban:focus {
   background: url('../../images/web/header/iconurbanhover.png') no-repeat 15px center;
   box-shadow: inset 0 -5px 0 0 #8bc53f;
   color: #8bc53f;
 }
-/* line 95, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 97, templates/it_oxygen/custom/scss/components/_menu.scss */
 .menu--primary__play {
   background: url('../../images/web/header/iconplay.png') no-repeat 15px center;
   color: #787878;
 }
-/* line 98, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 100, templates/it_oxygen/custom/scss/components/_menu.scss */
 .menu--primary__play:hover, .menu--primary__play:focus {
   background: url('../../images/web/header/iconplayhover.png') no-repeat 15px center;
   box-shadow: inset 0 -5px 0 0 #8bc53f;
   color: #8bc53f;
 }
-/* line 106, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 108, templates/it_oxygen/custom/scss/components/_menu.scss */
 .menu--primary .g-menu-item-title {
   margin-left: 0;
   padding-left: 20px;
 }
-/* line 115, templates/it_oxygen/custom/scss/components/_menu.scss */
-/* line 116, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 117, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 118, templates/it_oxygen/custom/scss/components/_menu.scss */
 #g-header .g-main-nav .g-dropdown.g-active {
   background-color: transparent;
   box-shadow: none;
   width: 205px;
 }
-/* line 122, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 124, templates/it_oxygen/custom/scss/components/_menu.scss */
 #g-header .g-main-nav .g-dropdown.g-dropdown-right {
   left: -40px;
 }
-/* line 126, templates/it_oxygen/custom/scss/components/_menu.scss */
-/* line 127, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 128, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 129, templates/it_oxygen/custom/scss/components/_menu.scss */
 #g-header .g-main-nav .g-dropdown .g-sublevel li {
   background-color: rgba(77, 77, 77, .7);
   border-right: none;
@@ -300,32 +306,32 @@ body #g-to-top .style1 #g-totop-button:hover, body #g-to-top .style1 #g-totop-bu
   padding: 0;
   text-align: center;
 }
-/* line 134, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 136, templates/it_oxygen/custom/scss/components/_menu.scss */
 #g-header .g-main-nav .g-dropdown .g-sublevel li a {
   height: auto;
   line-height: normal;
   margin: 0;
   padding: 15px 0 !important;
 }
-/* line 140, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 142, templates/it_oxygen/custom/scss/components/_menu.scss */
 #g-header .g-main-nav .g-dropdown .g-sublevel li a span {
   color: #fff;
 }
-/* line 144, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 146, templates/it_oxygen/custom/scss/components/_menu.scss */
 #g-header .g-main-nav .g-dropdown .g-sublevel li a:hover, #g-header .g-main-nav .g-dropdown .g-sublevel li a:focus {
   background-color: rgba(50, 50, 50, .3);
 }
-/* line 154, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 156, templates/it_oxygen/custom/scss/components/_menu.scss */
 .page-bike #g-header .g-main-nav .g-dropdown .g-sublevel li {
   background-color: rgba(97, 133, 50, .7);
 }
-/* line 157, templates/it_oxygen/custom/scss/components/_menu.scss */
-/* line 158, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 159, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 160, templates/it_oxygen/custom/scss/components/_menu.scss */
 .page-bike #g-header .g-main-nav .g-dropdown .g-sublevel li a:hover, .page-bike #g-header .g-main-nav .g-dropdown .g-sublevel li a:focus {
   background-color: rgba(87, 119, 45, .3);
 }
-/* line 165, templates/it_oxygen/custom/scss/components/_menu.scss */
-/* line 166, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 167, templates/it_oxygen/custom/scss/components/_menu.scss */
+/* line 168, templates/it_oxygen/custom/scss/components/_menu.scss */
 #g-mobilemenu-container .g-menu-item-title {
   fonts-size: 20px;
   line-height: 30px;
@@ -678,6 +684,17 @@ body #g-to-top .style1 #g-totop-button:hover, body #g-to-top .style1 #g-totop-bu
   margin-top: 115px;
   max-height: 420px;
   width: auto;
+}
+@media only screen and (max-width: 980px) {
+  /* line 57, templates/it_oxygen/custom/scss/components/_standardbollards.scss */
+  /* line 58, templates/it_oxygen/custom/scss/components/_standardbollards.scss */
+  .illuminatedbollards .standardbollards--left.image-block {
+    display: none !important;
+  }
+  /* line 61, templates/it_oxygen/custom/scss/components/_standardbollards.scss */
+  .illuminatedbollards .standardbollards--right {
+    width: 100% !important;
+  }
 }
 /* line 1, templates/it_oxygen/custom/scss/components/_contentpro.scss */
 .moredetails {
@@ -1084,47 +1101,59 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   display: flex;
 }
 /* line 5, templates/it_oxygen/custom/scss/extra/_extra.scss */
-.area_block {
-  background-position: left bottom;
-  background-size: 100% 100%;
-  color: #fff;
-  overflow: hidden;
-  position: relative;
+@media only screen and (max-width: 600px) {
+  .area_block {
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+  }
 }
-/* line 12, templates/it_oxygen/custom/scss/extra/_extra.scss */
+@media only screen and (min-width: 601px) {
+  .area_block {
+    background-position: left bottom;
+    background-size: 100% 100%;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+}
+/* line 32, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .area_block.hori1 {
   background-size: cover;
 }
-/* line 16, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 36, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .area_block .move_right {
   bottom: -293px;
   position: absolute;
   right: -137px;
   width: 67.3%;
 }
-/* line 23, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 43, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .area_block .right {
   height: 100%;
   position: relative;
 }
-/* line 27, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 47, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .area_block .right img {
   bottom: 0;
   height: 80%;
   position: absolute;
   width: 17%;
 }
-/* line 36, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 56, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .area_block .move_left {
   bottom: 0;
   position: absolute;
   width: 50%;
 }
-/* line 41, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 61, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .area_block .move_left img {
   width: 100%;
 }
-/* line 47, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 67, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .area_block .move_top {
   bottom: -172px;
   height: 100%;
@@ -1134,44 +1163,44 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   width: 15%;
   z-index: 2;
 }
-/* line 57, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 77, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .area_block .fix_stand {
   bottom: -70px;
   position: absolute;
   right: -8px;
   width: 43%;
 }
-/* line 66, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 86, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .detail_txt {
   padding: 48% 0 37%;
   position: relative;
 }
-/* line 70, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 90, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .detail_txt .middle {
   font-family: 'PassionOne-Regular';
   margin: 17px 0;
 }
-/* line 74, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 94, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .detail_txt .middle p {
   font-size: 60px;
   line-height: 56px;
   margin: 0;
 }
-/* line 82, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 102, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .detail_txt .top img {
   display: inline-block;
   vertical-align: top;
 }
-/* line 87, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 107, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .detail_txt .mor_btn.red_btn {
   background: #fa6633;
 }
-/* line 90, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 110, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .detail_txt .mor_btn.red_btn:hover, .detail_txt .mor_btn.red_btn:focus {
   background: #d24717;
 }
-/* line 97, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 99, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 117, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 119, templates/it_oxygen/custom/scss/extra/_extra.scss */
 #g-fullwidth .detail_txt .top h3 {
   color: #fff;
   display: inline-block;
@@ -1179,7 +1208,7 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   font-size: 32px;
   margin: 6px 0 0 10px;
 }
-/* line 107, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 127, templates/it_oxygen/custom/scss/extra/_extra.scss */
 #g-fullwidth .about_banner h1 {
   color: #333;
   font-family: 'roboto';
@@ -1187,17 +1216,17 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   font-weight: normal;
   margin: 8px 0 19px;
 }
-/* line 117, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 121, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 137, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 141, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-bike #g-subfeature, .page-urban #g-subfeature, .page-play #g-subfeature {
   background-color: #333;
 }
-/* line 125, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 126, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 145, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 146, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-bike .g-content-pro .g-content-pro-item, .page-urban .g-content-pro .g-content-pro-item, .page-play .g-content-pro .g-content-pro-item {
   border: 0;
 }
-/* line 130, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 150, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-bike .g-content-pro .g-info-container, .page-urban .g-content-pro .g-info-container, .page-play .g-content-pro .g-info-container {
   background: none;
   color: #fff;
@@ -1205,47 +1234,47 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   font-size: 24px;
   line-height: 32px;
 }
-/* line 139, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 141, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 143, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 159, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 161, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 163, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-bike .g-content > .standardbollards:nth-child(2) .standardbollards--left, .page-urban .g-content > .standardbollards:nth-child(2) .standardbollards--left, .page-play .g-content > .standardbollards:nth-child(2) .standardbollards--left {
   margin-top: 15px;
   width: 62%;
 }
-/* line 148, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 168, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-bike .g-content > .standardbollards:nth-child(2) .standardbollards--right, .page-urban .g-content > .standardbollards:nth-child(2) .standardbollards--right, .page-play .g-content > .standardbollards:nth-child(2) .standardbollards--right {
   width: 37%;
 }
-/* line 152, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 172, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-bike .g-content > .standardbollards:nth-child(2) .g-grid, .page-urban .g-content > .standardbollards:nth-child(2) .g-grid, .page-play .g-content > .standardbollards:nth-child(2) .g-grid {
   border-top: 1px solid #ccc;
   padding-top: 83px;
   position: relative;
 }
-/* line 157, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 177, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-bike .g-content > .standardbollards:nth-child(2) .g-grid h3.g-main-feature-title, .page-urban .g-content > .standardbollards:nth-child(2) .g-grid h3.g-main-feature-title, .page-play .g-content > .standardbollards:nth-child(2) .g-grid h3.g-main-feature-title {
   left: 0;
   position: absolute;
   top: 0;
 }
-/* line 165, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 185, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-bike .g-content > .standardbollards:nth-child(2) h3.g-main-feature-title, .page-urban .g-content > .standardbollards:nth-child(2) h3.g-main-feature-title, .page-play .g-content > .standardbollards:nth-child(2) h3.g-main-feature-title {
   margin-top: 30px;
 }
-/* line 171, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 191, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-bike .g-content > .standardbollards:last-child, .page-urban .g-content > .standardbollards:last-child, .page-play .g-content > .standardbollards:last-child {
   margin-bottom: 30px;
 }
-/* line 177, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 179, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 197, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 199, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-urban #colorbox {
   border-radius: 0;
 }
-/* line 183, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 203, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-urban #cboxLoadedContent {
   padding: 30px;
 }
-/* line 187, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 207, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .page-urban .modelpopup .bfPageIntro p {
   border-bottom: none;
   border-left: 5px solid #8bc53f;
@@ -1257,71 +1286,71 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   margin-bottom: 30px;
   padding: 5px 10px;
 }
-/* line 200, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 201, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 220, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 221, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .moduletable.right_slide {
   float: right;
 }
-/* line 205, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 225, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .moduletable .top_slider {
   height: 519px;
   padding-bottom: 16px;
   padding-top: 34px;
 }
-/* line 212, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 232, templates/it_oxygen/custom/scss/extra/_extra.scss */
 #g-feature {
   background: none !important;
 }
-/* line 215, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 216, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 235, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 236, templates/it_oxygen/custom/scss/extra/_extra.scss */
 #g-feature .g-grid > .g-content {
   padding: 0;
 }
-/* line 220, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 240, templates/it_oxygen/custom/scss/extra/_extra.scss */
 #g-feature .g-grid > .standardbollards--left {
   margin-left: 0;
 }
-/* line 222, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 242, templates/it_oxygen/custom/scss/extra/_extra.scss */
 #g-feature .g-grid > .standardbollards--left > .g-content {
   padding-left: 0;
 }
-/* line 230, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 232, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 250, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 252, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .standardbollards--right p {
   color: #8bc53f;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
 }
-/* line 239, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 259, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .standardbollards--right span {
   color: #333;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
 }
-/* line 247, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 267, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .moredetails__header {
   margin-bottom: 20px;
   margin-top: 10px;
 }
-/* line 252, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 254, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 272, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 274, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .moredetails .g-content-pro-title {
   margin: 26px auto;
 }
-/* line 258, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 278, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .moredetails .g-content-pro-image {
   max-height: 215px;
   max-width: 382px;
   overflow: hidden;
 }
-/* line 263, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 283, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .moredetails .g-content-pro-image .uk-overlay-fade {
   max-height: 215px;
   max-width: 382px;
 }
-/* line 267, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 287, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .moredetails .g-content-pro-image .uk-overlay-fade.uk-overlay-icon:before {
   background: #8bc53f;
   border-radius: 50%;
@@ -1331,8 +1360,8 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   padding: 20px;
   top: 41%;
 }
-/* line 283, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 285, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 303, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 305, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .txtabs-nav {
   bottom: -1px;
   font-family: 'roboto';
@@ -1340,11 +1369,11 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   margin: 0;
   position: relative;
 }
-/* line 293, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 313, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .txtabs-nav li {
   display: inline-block;
 }
-/* line 296, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 316, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .txtabs-nav li a {
   border: 1px solid transparent;
   color: #333;
@@ -1355,45 +1384,45 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   padding: 9px 37px;
   text-decoration: none;
 }
-/* line 307, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 327, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .txtabs-nav li.active a {
   border: 1px solid #ccc;
   border-bottom: 1px solid #fff;
 }
-/* line 314, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 334, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .txtabs-content {
   border: 1px solid #ccc;
 }
-/* line 317, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 319, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 337, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 339, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .txtabs-content .txtabs-pane.fade {
   display: none;
 }
-/* line 323, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 343, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .txtabs-content .txtabs-pane.active.fade {
   display: block;
 }
-/* line 331, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 351, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .slide-desc-text-default {
   display: none;
 }
-/* line 335, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 337, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 355, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 357, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .djslider-default .navigation-container-custom {
   bottom: -30px;
   left: 0;
   right: auto;
   top: auto;
 }
-/* line 342, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 362, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .djslider-default .navigation-container-custom:focus {
   outline: none;
 }
-/* line 346, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 366, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .djslider-default .navigation-container-custom span:focus {
   outline: none;
 }
-/* line 351, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 371, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .djslider-default .load-button {
   border: 0;
   border-radius: 0;
@@ -1401,39 +1430,39 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   opacity: 1;
   width: 16px;
 }
-/* line 359, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 379, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .djslider-default .load-button-active {
   height: 21px;
   margin-bottom: -2px;
   width: 21px;
 }
-/* line 366, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 386, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .djslider-loader-default {
   overflow: visible;
 }
-/* line 370, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 390, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties h3.g-title {
   color: #8bc53f !important;
   font-family: 'roboto';
   font-size: 18px;
   line-height: 22px;
 }
-/* line 377, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 397, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .varieties .g-title span:after {
   display: none;
 }
-/* line 382, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 402, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modelpopup {
   color: #333;
   font-family: 'roboto';
   font-size: 18px;
 }
-/* line 387, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 388, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 407, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 408, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modelpopup .bfClearfix label {
   font-weight: normal;
 }
-/* line 392, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 412, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modelpopup .bfClearfix input[type="text"] {
   border: 1px solid #888;
   border-radius: 5px;
@@ -1443,81 +1472,81 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   padding: 0 8px 5px;
   width: 100%;
 }
-/* line 401, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 421, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modelpopup .bfClearfix input[type="text"]:focus {
   border: 1px solid #8bc53f;
 }
-/* line 406, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 426, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modelpopup .bfClearfix textarea {
   border: 1px solid #888;
   border-radius: 5px;
   font-size: 24px;
   width: 100%;
 }
-/* line 413, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 433, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modelpopup .bfClearfix .bfSubmitButton {
   display: block;
   margin: 40px auto;
   width: 120px;
 }
-/* line 420, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 422, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 440, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 442, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modelpopup .bfSectionDescription h2 {
   border: 5px solid #000;
   padding: 16px 10px;
   text-align: center;
 }
-/* line 427, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 447, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modelpopup .bfSectionDescription h2 strong {
   color: #000;
   font-family: 'roboto';
   font-size: 26px;
 }
-/* line 435, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 455, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modelpopup .bfSectionDescription > p {
   margin: 27px 0;
 }
-/* line 442, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 444, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 446, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 462, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 464, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 466, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .pweb-form-blue .modal-dialog form.pwebcontact-form input.pweb-input:focus {
   border: 1px solid #8bc53f !important;
   box-shadow: none !important;
 }
-/* line 451, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 471, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .pweb-form-blue .modal-dialog form.pwebcontact-form select:focus {
   border: 1px solid #8bc53f !important;
   box-shadow: none !important;
 }
-/* line 457, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 477, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .pweb-form-blue form.pwebcontact-form textarea:focus {
   border: 1px solid #8bc53f !important;
   box-shadow: none !important;
 }
-/* line 463, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 467, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 471, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 475, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 479, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 483, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 487, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 491, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 495, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 499, templates/it_oxygen/custom/scss/extra/_extra.scss */
 #pwebcontact205_text-2 {
   margin: 30px 0 40px;
 }
-/* line 483, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 503, templates/it_oxygen/custom/scss/extra/_extra.scss */
 #pwebcontact206_text-2 {
   margin: 30px 0 40px;
 }
-/* line 487, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 507, templates/it_oxygen/custom/scss/extra/_extra.scss */
 :focus {
   outline-style: auto;
   outline-width: 0;
 }
-/* line 492, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 512, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .uk-sticky-placeholder {
   height: 87px;
   margin: 0;
 }
-/* line 497, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 499, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 517, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 519, templates/it_oxygen/custom/scss/extra/_extra.scss */
 @media only screen and (min-width: 767px) {
   .aboutus-page .about_banner {
     background: #eee url('../images/experiencedwelders.jpg?57edfcb9') right center no-repeat;
@@ -1526,36 +1555,36 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
     position: relative;
   }
 }
-/* line 508, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 528, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .about_banner .row {
   margin-left: -15px;
   margin-right: -15px;
 }
-/* line 513, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 533, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .about_banner p {
   color: #333;
   font-size: 18px;
   line-height: 30px;
 }
-/* line 519, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 539, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .about_banner .g-container > div:first-child {
   margin-bottom: 20px;
 }
-/* line 523, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 543, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .about_banner .container > .row > div:first-child .row {
   padding-right: 15px;
 }
-/* line 528, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 548, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .fab_img {
   position: absolute;
   right: 0;
 }
-/* line 532, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 552, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .fab_img img {
   display: none;
 }
-/* line 537, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 539, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 557, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 559, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .g-our-team-social a {
   background: #8bc53f;
   border-radius: 50px;
@@ -1565,17 +1594,17 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   text-align: center;
   width: 36px !important;
 }
-/* line 548, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 568, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .g-our-team-social a:hover {
   background-color: #618532;
 }
-/* line 553, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 573, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .g-our-team-social .fa-envelope:before {
   color: #fff;
   content: "\f003";
   font-size: 21px;
 }
-/* line 560, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 580, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .top_slider {
   background: #eee;
   color: #333;
@@ -1584,7 +1613,7 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   line-height: 25px;
   margin-bottom: 15px;
 }
-/* line 568, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 588, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .top_slider h2 {
   color: #333 !important;
   font-family: 'roboto';
@@ -1594,7 +1623,7 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   margin-bottom: 17px;
   text-transform: capitalize;
 }
-/* line 578, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 598, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .top_slider .readmore {
   background: #8bc53f;
   border-radius: 45px;
@@ -1602,57 +1631,57 @@ body .btn.btn-primary.validate:hover, body .btn.btn-primary.validate:focus {
   margin-right: 11px;
   padding: 9px 30px;
 }
-/* line 585, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 605, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .top_slider .readmore a {
   color: #fff;
   font-family: 'Patua One';
   font-size: 16px;
 }
-/* line 590, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 610, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .top_slider .readmore a:hover, .top_slider .readmore a:focus {
   text-decoration: none;
 }
-/* line 597, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 598, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 617, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 618, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .top_slider .slides_container .bt-inner .readmore:hover, .top_slider .slides_container .bt-inner .readmore:focus {
   background-color: #618532;
 }
-/* line 605, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 606, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 625, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 626, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .right_slide .slides_control .slide {
   height: 100% !important;
 }
-/* line 610, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 630, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .right_slide .bt-cs .bt-inner img {
   height: 519px;
   width: 831px !important;
 }
-/* line 616, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 618, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 636, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 638, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .contacus-page .g-particle, .contacus-page #g-mainbody {
   color: #333;
 }
-/* line 623, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 643, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .contacus-page #g-mainbody {
   color: #333;
 }
-/* line 628, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 648, templates/it_oxygen/custom/scss/extra/_extra.scss */
 body.itemid-101 #g-fullwidth {
   padding-top: 87px;
 }
-/* line 632, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 652, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .slide .bt-row .row {
   margin-left: -15px;
 }
-/* line 636, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 656, templates/it_oxygen/custom/scss/extra/_extra.scss */
 p.blank {
   height: 5px;
 }
-/* line 640, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 660, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .bt-inner img {
   opacity: 1 !important;
 }
-/* line 644, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 664, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .g-particle .g-main-feature-title {
   border-left: 5px solid #8bc53f;
   color: #333 !important;
@@ -1663,24 +1692,24 @@ p.blank {
   margin-top: 40px;
   padding: 5px 10px;
 }
-/* line 655, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 675, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .g-content .standardbollards--right img {
   margin-top: 15px;
   max-height: 510px;
 }
-/* line 660, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 680, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .bike__moredetails .g-content-pro-title {
   font-family: 'roboto';
 }
-/* line 664, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 665, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 684, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 685, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .platform-content .custom p.order_btn {
   border-bottom: 1px solid #ccc;
   margin-top: 50px;
   padding-bottom: 10px;
   text-align: center;
 }
-/* line 672, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 692, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .platform-content .custom .order_btn a {
   background: #8bc53f;
   border-radius: 50px;
@@ -1692,12 +1721,12 @@ p.blank {
   padding: 15px 22px;
   text-decoration: none;
 }
-/* line 683, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 703, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .platform-content .custom .order_btn a:focus, .platform-content .custom .order_btn a:hover {
   background: #618532;
   outline: none;
 }
-/* line 691, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 711, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .titlename h3.g-title {
   border-left: 5px solid #8bc53f;
   color: #333 !important;
@@ -1709,12 +1738,12 @@ p.blank {
   margin-top: 0;
   padding: 5px 10px;
 }
-/* line 702, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 722, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .titlename h3.g-title span:after {
   display: none;
 }
-/* line 707, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 708, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 727, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 728, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .djslider-default .slider-container > ul > li:hover a:after {
   background: #000;
   content: '';
@@ -1726,7 +1755,7 @@ p.blank {
   transition: 0.5s;
   width: 100%;
 }
-/* line 720, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 740, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .djslider-default .slider-container > ul > li:hover a:before {
   background: url('../images/search_icon.png?57edfcb9') no-repeat center;
   content: '';
@@ -1736,51 +1765,51 @@ p.blank {
   width: 100%;
   z-index: 1;
 }
-/* line 731, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 751, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modal-dialog .pwebcontact-form {
   color: #333;
   font-family: 'roboto';
   font-size: 18px;
 }
-/* line 736, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 738, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 756, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 758, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modal-dialog .pwebcontact-form .pweb-field-container .pweb-label {
   width: 100%;
 }
-/* line 741, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 761, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modal-dialog .pwebcontact-form .pweb-field-container .pweb-label label {
   font-weight: normal;
   text-transform: capitalize;
 }
-/* line 744, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 764, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modal-dialog .pwebcontact-form .pweb-field-container .pweb-label label .pweb-asterisk {
   color: #333;
 }
-/* line 750, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 751, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 770, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 771, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modal-dialog .pwebcontact-form .pweb-field-container .pweb-field textarea {
   height: 103px !important;
 }
-/* line 756, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 776, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modal-dialog .pwebcontact-form .pweb-field-container .pweb-field select {
   height: 43px;
 }
-/* line 760, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 780, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .modal-dialog .pwebcontact-form .pweb-field-container .pweb-field input.pweb-input {
   height: 43px;
 }
-/* line 768, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 769, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 788, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 789, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .pweb-labels-inline .modal-dialog form.pwebcontact-form .pweb-field {
   width: 100%;
 }
-/* line 773, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 793, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .pweb-labels-inline .modal-dialog form.pwebcontact-form .pweb-field-buttons .pweb-field {
   display: block;
   margin: 28px 0 0;
   text-align: center;
 }
-/* line 778, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 798, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .pweb-labels-inline .modal-dialog form.pwebcontact-form .pweb-field-buttons .pweb-field button.btn {
   background: #8bc53f;
   border: none;
@@ -1791,56 +1820,56 @@ p.blank {
   padding: 10px 0;
   width: 125px;
 }
-/* line 787, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 807, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .pweb-labels-inline .modal-dialog form.pwebcontact-form .pweb-field-buttons .pweb-field button.btn:hover {
   background: #618532;
 }
-/* line 794, templates/it_oxygen/custom/scss/extra/_extra.scss */
-/* line 795, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 814, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 815, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .pwebcontact-box.pweb-modal.pweb-radius div.pwebcontact-container {
   border-radius: 0;
 }
-/* line 799, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 819, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .pwebcontact-box.pweb-modal div.pwebcontact-container {
   padding: 30px;
 }
-/* line 804, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 824, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .ui-effects-transfer.pweb-genie.pweb-radius {
   border-radius: 0;
 }
-/* line 808, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 828, templates/it_oxygen/custom/scss/extra/_extra.scss */
 div.pweb-modal .pweb-button-close {
   background: url('../images/close.png?57edfcb9') no-repeat !important;
   padding: 36px 0 0 36px !important;
 }
-/* line 813, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 833, templates/it_oxygen/custom/scss/extra/_extra.scss */
 header#g-header {
   position: fixed;
   top: 0;
   width: 100%;
 }
-/* line 819, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 839, templates/it_oxygen/custom/scss/extra/_extra.scss */
 form.pwebcontact-form button.btn:focus {
   outline-style: auto;
   outline-width: 0;
 }
-/* line 824, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 844, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .no-article #g-container-main {
   display: none;
 }
-/* line 828, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 848, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .g-block .about_banner .g-container {
   width: 1170px;
 }
-/* line 832, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 852, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .cstm_cont .g-container {
   width: 1170px;
 }
-/* line 840, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 860, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .pweb-alert.alert-block {
   font-size: 16px !important;
 }
-/* line 844, templates/it_oxygen/custom/scss/extra/_extra.scss */
+/* line 864, templates/it_oxygen/custom/scss/extra/_extra.scss */
 .contact-form form > fieldset > legend {
   color: #333;
   font-size: 16px;
@@ -2198,7 +2227,7 @@ form.pwebcontact-form button.btn:focus {
   }
   /* line 315, templates/it_oxygen/custom/scss/extra/_responsive.scss */
   .uk-sticky-placeholder {
-    height: 130px;
+    height: 120px;
   }
   /* line 318, templates/it_oxygen/custom/scss/extra/_responsive.scss */
   /* line 319, templates/it_oxygen/custom/scss/extra/_responsive.scss */
@@ -2652,7 +2681,7 @@ form.pwebcontact-form button.btn:focus {
   }
   /* line 142, templates/it_oxygen/custom/scss/extra/_homepage.scss */
   .area_block.hori1 {
-    background: url('../images') no-repeat !important;
+    background: url('../../../../images/home/second.jpg?57ee0138') no-repeat !important;
     background-attachment: fixed !important;
     background-position: 0 4px !important;
     background-size: 120% 151% !important;
@@ -2677,37 +2706,48 @@ form.pwebcontact-form button.btn:focus {
   }
   /* line 163, templates/it_oxygen/custom/scss/extra/_homepage.scss */
   .area_block.hori1 {
-    background: url('../images') no-repeat !important;
-    background-attachment: fixed !important;
-    background-position: 0 94px !important;
-    background-size: 110% 110% !important;
+    background: url('../../../../images/home/second.jpg?57ee0138') no-repeat !important;
+    background-attachment: inherit !important;
+    background-position: 0 0 !important;
+    background-size: cover !important;
+    height: 400px;
+  }
+  /* line 170, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block.hori1 .container {
+    margin-top: 100px;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 173, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  /* line 178, templates/it_oxygen/custom/scss/extra/_homepage.scss */
   .area_block.hori2 .detail_txt {
     padding-bottom: 7%;
   }
-  /* line 176, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  /* line 181, templates/it_oxygen/custom/scss/extra/_homepage.scss */
   footer#g-footer {
     padding: 10px 0;
   }
-  /* line 179, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  /* line 184, templates/it_oxygen/custom/scss/extra/_homepage.scss */
   .area_block.hori {
     background-size: 200% 87%;
   }
-  /* line 182, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  /* line 187, templates/it_oxygen/custom/scss/extra/_homepage.scss */
   .area_block .right {
     height: 208px;
   }
-  /* line 185, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  /* line 190, templates/it_oxygen/custom/scss/extra/_homepage.scss */
   .mor_btn {
     padding: 6px;
     margin-right: 3px;
   }
-  /* line 189, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  /* line 194, templates/it_oxygen/custom/scss/extra/_homepage.scss */
   .mor_btn a {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 204, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .custom.area_block.hori1 {
+    height: 494px !important;
   }
 }
 /*!dev*/
