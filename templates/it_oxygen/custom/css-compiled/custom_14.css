@@ -2507,3 +2507,207 @@ form.pwebcontact-form button.btn:focus {
     width: 99%;
   }
 }
+/* edited by urmi */
+/* line 2, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.loaded {
+  opacity: 1;
+  transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out;
+}
+/* line 9, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.hori {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+/* line 18, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.hori1 {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+/* line 27, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.hor2 {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+/* edited by urmi */
+/*dev*/
+/* line 39, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.mor_btn {
+  background: #8bc53f;
+  border-radius: 45px;
+  display: inline-block;
+  margin-right: 11px;
+  padding: 10px 19px;
+}
+/* line 47, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.mor_btn:hover, .mor_btn:focus {
+  background: #618532;
+}
+/* line 51, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.mor_btn a {
+  color: #fff;
+  font-family: "Patua One";
+  font-size: 16px;
+}
+/* line 57, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.mor_btn a button {
+  background: none;
+  vertical-align: top;
+}
+/* line 62, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.djslider-default .slider-container > ul > li:hover a:before {
+  background: url('../images/search_icon.png?57dd16b9&57edfcb9') no-repeat center;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  height: 100%;
+  position: absolute;
+  width: 20px;
+  width: 100%;
+  z-index: 1;
+}
+/* line 74, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.djslider-default .slider-container > ul > li:hover a:after {
+  background: #000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  width: 100%;
+}
+/* line 86, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+#pwebcontact205_text-0, #pwebcontact206_text-0 {
+  border-bottom: none;
+  border-left: 5px solid #8bc53f;
+  color: #333 !important;
+  font-family: 'Patua One';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+  padding: 5px 10px;
+}
+/* line 98, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.modal-dialog .pwebcontact-form .pweb-field-container .pweb-field select {
+  border: 1px solid;
+  box-shadow: none;
+  font-size: 24px;
+  height: 43px;
+  line-height: normal;
+  padding: 0 3px 3px;
+}
+/* line 107, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.area_block .right {
+  height: 696px;
+  position: absolute;
+  top: auto;
+  width: 100%;
+}
+/* line 114, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+.slider .bt-cs .next {
+  left: 75px;
+  transform: none;
+}
+@media only screen and (max-width: 1320px) {
+  /* line 120, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block .right {
+    height: 530px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* line 126, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block .right {
+    height: 435px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 132, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block .right {
+    height: 248px;
+    position: relative;
+  }
+  /* line 136, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  body.itemid-101 #g-fullwidth {
+    padding-top: 122px;
+  }
+  /* line 139, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block.hori1 .detail_txt {
+    padding-bottom: 22%;
+  }
+  /* line 142, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block.hori1 {
+    background: url('../images') no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: 0 4px !important;
+    background-size: 120% 151% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 151, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block.hori2 .detail_txt {
+    padding-bottom: 15%;
+  }
+  /* line 154, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block.hori1 .detail_txt {
+    padding-bottom: 11%;
+  }
+  /* line 157, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .mor_btn {
+    background: #86b746;
+  }
+  /* line 160, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block.hori {
+    background-size: 120% 78%;
+  }
+  /* line 163, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block.hori1 {
+    background: url('../images') no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: 0 94px !important;
+    background-size: 110% 110% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 173, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block.hori2 .detail_txt {
+    padding-bottom: 7%;
+  }
+  /* line 176, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  footer#g-footer {
+    padding: 10px 0;
+  }
+  /* line 179, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block.hori {
+    background-size: 200% 87%;
+  }
+  /* line 182, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .area_block .right {
+    height: 208px;
+  }
+  /* line 185, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .mor_btn {
+    padding: 6px;
+    margin-right: 3px;
+  }
+  /* line 189, templates/it_oxygen/custom/scss/extra/_homepage.scss */
+  .mor_btn a {
+    font-size: 14px;
+  }
+}
+/*!dev*/
